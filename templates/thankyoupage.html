@@ -1,0 +1,24 @@
+{% include "header.html" %}
+{%load static%}
+<link rel="stylesheet" href='{% static 'thankyou.css'%}'>
+    <div class="thanks">
+        <h2>
+           Thank You!
+        </h2>
+        <p>
+            For joining GamersZone
+        </p>
+        <button id="gototournamentsection">Tournaments</button>
+    </div>
+    <div class="thankyouimage">
+        <img src="{%static "lara-e1595336553498_ccexpress.png" %}" alt="tankyouimage">
+    </div>
+    {% include "footer.html" %}
+    <script>
+        var tournament=document.getElementById ("gototournamentsection");
+        tournament.onclick=function thankyou(){
+            location.href="tournamentpage";
+        }
+    </script>
+</body>
+</html>

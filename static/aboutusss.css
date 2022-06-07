@@ -1,0 +1,598 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.aboutus{
+    height:660px;
+    width:100%;
+    background-color: #32C7FF;
+}
+.aboutus p{
+    font-family: karma;
+    font-size: 42px;
+    position: absolute;
+    top:200px;
+    left:50px;
+}
+.a{
+    position: absolute;
+    top: 500px;
+    left:150px;
+    font-family: karma;
+    font-size: 20px;
+    margin: 20px 3px;
+}
+.b{
+    position: absolute;
+    top: 550px;
+    left:150px;
+    font-family: karma;
+    font-size: 20px;
+    margin: 20px 3px;
+}
+.aboutus img{
+    height:700px;
+    width:500px;
+    position: absolute;
+    top:40px;
+    left:700px;
+}
+.about{
+    height:500pxl;
+    width:100%;
+}
+.about h1{
+    position: absolute;
+    top: 780px;
+    left:550px;
+    font-family: karma;
+    font-size: 31px;
+    margin: 20px 3px;
+}
+.about h4{
+    position: absolute;
+    top: 860px;
+    left:550px;
+    font-family: karma;
+    font-size: 21px;
+    margin: 20px 3px;
+}
+.security{
+    position: absolute;
+    top:950px;
+    left:50px;
+    border:1px solid white;
+    box-shadow: 0 0 8px 0 #32C7FF;
+    height:300px;
+    width:325px;
+}
+.security:hover{
+    background-color:#32C7FF;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0 0 8px 0 black;
+}
+.security img{
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    top: 55px;
+    left: 155px;
+}
+.security p{
+    position: relative;
+    top:130px;
+    text-align: center;
+    font-family: karma;
+    font-size: 20px;
+}
+.fast{
+    position: absolute;
+    top:950px;
+    left:479px;
+    border:1px solid white;
+    box-shadow: 0 0 8px 0 #32C7FF;
+    height:300px;
+    width:325px;
+}
+.fast:hover{
+    background-color:#32C7FF;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0 0 8px 0 black;
+}
+.fast img{
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    top: 55px;
+    left: 155px;
+}
+.fast p{
+    position: relative;
+    top:130px;
+    text-align: center;
+    font-family: karma;
+    font-size: 20px;
+}
+.money{
+    position: absolute;
+    top:950px;
+    left:895px;
+    border:1px solid white;
+    box-shadow: 0 0 8px 0 #32C7FF;
+    height:300px;
+    width:325px;
+}
+.money:hover{
+    background-color:#32C7FF;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0 0 8px 0 black;
+}
+.money img{
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    top: 55px;
+    left: 155px;
+}
+.money p{
+    position: relative;
+    top:130px;
+    text-align: center;
+    font-family: karma;
+    font-size: 20px;
+}
+@media only screen and (min-width:200px) and (max-width:500px){
+    .aboutus{
+        height: 220vh;
+        width: 100%;
+        background-color: #32C7FF;
+    }
+    .aboutus p{
+        font-family: karma;
+        font-size: 11vw;
+        position: absolute;
+        top: 27vh;
+        left: 5vw;
+    }
+    .a{
+        position: absolute;
+        top: 95vh;
+        left: 8vw;
+        font-family: karma;
+        font-size: 6vw;
+        margin: 20px 3px;
+    }
+    .b{
+        position: absolute;
+        top: 105vh;
+        left: 8vw;
+        font-family: karma;
+        font-size: 6vw;
+        margin: 20px 3px;
+    }
+    .aboutus img{
+        height: 100vh;
+        width: 117vw;
+        position: absolute;
+        top: 120vh;
+        left: -18vw;
+    }
+    .about{
+        height: 200vh;
+        width: 100%;
+    }
+    .about h1{
+        position: absolute;
+        top: 230vh;
+        left: 5vw;
+        font-family: karma;
+        font-size: 12vw;
+        margin: 20px 3px;
+    }
+    .about h4{
+        position: absolute;
+        top: 241vh;
+        left: 15vw;
+        font-family: karma;
+        font-size: 6vw;
+        margin: 20px 3px;
+    }
+    .security{
+        position: absolute;
+        top: 260vh;
+        left: 4.5vw;
+        border: 1px solid white;
+        box-shadow: 0 0 8px 0 #32c7ff;
+        height: 40vh;
+        width: 90vw;
+    }
+    .security:hover{
+        background-color:#32C7FF;
+        color: black;
+        border-radius: 20px;
+        box-shadow: 0 0 8px 0 black;
+    }
+    .security img{
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        top: 55px;
+        left: 42vw;
+    }
+    .security p{
+        position: relative;
+        top:130px;
+        text-align: center;
+        font-family: karma;
+        font-size: 20px;
+    }
+    .fast{
+        position: absolute;
+        top: 310vh;
+        left: 4.5vw;
+        border: 1px solid white;
+        box-shadow: 0 0 8px 0 #32c7ff;
+        height: 40vh;
+        width: 90vw;
+    }
+    .fast:hover{
+        background-color:#32C7FF;
+        color: black;
+        border-radius: 20px;
+        box-shadow: 0 0 8px 0 black;
+    }
+    .fast img{
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        top: 55px;
+        left: 42vw;
+    }
+    .fast p{
+        position: relative;
+        top:130px;
+        text-align: center;
+        font-family: karma;
+        font-size: 20px;
+    }
+    .money{
+        position: absolute;
+        top: 360vh;
+        left: 4.5vw;
+        border: 1px solid white;
+        box-shadow: 0 0 8px 0 #32c7ff;
+        height: 40vh;
+        width: 90vw;
+    }
+    .money:hover{
+        background-color:#32C7FF;
+        color: black;
+        border-radius: 20px;
+        box-shadow: 0 0 8px 0 black;
+    }
+    .money img{
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        top: 55px;
+        left: 42vw;
+    }
+    .money p{
+        position: relative;
+        top:130px;
+        text-align: center;
+        font-family: karma;
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width:500px) and (max-width:1000px){
+    .aboutus{
+        height: 190vh;
+        width: 100%;
+        background-color: #32C7FF;
+    }
+    .aboutus p{
+        font-family: karma;
+        font-size: 7vw;
+        position: absolute;
+        top: 27vh;
+        left: 5vw;
+    }
+    .a{
+        position: absolute;
+        top: 62vh;
+        left: 8vw;
+        font-family: karma;
+        font-size: 4vw;
+        margin: 20px 3px;
+    }
+    .b{
+        position: absolute;
+        top: 72vh;
+        left: 8vw;
+        font-family: karma;
+        font-size: 4vw;
+        margin: 20px 3px;
+    }
+    .aboutus img{
+        height: 110vh;
+        width: 117vw;
+        position: absolute;
+        top: 80vh;
+        left: -18vw;
+    }
+    .about{
+        height: 200vh;
+        width: 100%;
+    }
+    .about h1{
+        position: absolute;
+        top: 200vh;
+        left: 13vw;
+        font-family: karma;
+        font-size: 10vw;
+        margin: 20px 3px;
+    }
+    .about h4{
+        position: absolute;
+        top: 215vh;
+        left: 26vw;
+        font-family: karma;
+        font-size: 4vw;
+        margin: 20px 3px;
+    }
+    .security{
+        position: absolute;
+        top: 240vh;
+        left: 10.5vw;
+        border: 1px solid white;
+        box-shadow: 0 0 8px 0 #32c7ff;
+        height: 40vh;
+        width: 80vw;
+    }
+    .security:hover{
+        background-color:#32C7FF;
+        color: black;
+        border-radius: 20px;
+        box-shadow: 0 0 8px 0 black;
+    }
+    .security img{
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        top: 55px;
+        left: 40vw;
+    }
+    .security p{
+        position: relative;
+        top:130px;
+        text-align: center;
+        font-family: karma;
+        font-size: 4vw;
+    }
+    .fast{
+        position: absolute;
+        top: 290vh;
+        left: 10.5vw;
+        border: 1px solid white;
+        box-shadow: 0 0 8px 0 #32c7ff;
+        height: 40vh;
+        width: 80vw;
+    }
+    .fast:hover{
+        background-color:#32C7FF;
+        color: black;
+        border-radius: 20px;
+        box-shadow: 0 0 8px 0 black;
+    }
+    .fast img{
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        top: 55px;
+        left: 40vw;
+    }
+    .fast p{
+        position: relative;
+        top:130px;
+        text-align: center;
+        font-family: karma;
+        font-size: 4vw;
+    }
+    .money{
+        position: absolute;
+        top: 340vh;
+        left: 10.5vw;
+        border: 1px solid white;
+        box-shadow: 0 0 8px 0 #32c7ff;
+        height: 40vh;
+        width: 80vw;
+    }
+    .money:hover{
+        background-color:#32C7FF;
+        color: black;
+        border-radius: 20px;
+        box-shadow: 0 0 8px 0 black;
+    }
+    .money img{
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        top: 55px;
+        left: 40vw;
+    }
+    .money p{
+        position: relative;
+        top:130px;
+        text-align: center;
+        font-family: karma;
+        font-size: 4vw;
+    }
+}
+@media only screen and (min-width:1000px) and (max-width:2000px){
+    .aboutus{
+        height:95vh;
+        width:100%;
+        position: absolute;
+        top: 5vh;
+        background-color: #32C7FF;
+    }
+    .aboutus p{
+        font-family: karma;
+        font-size: 3.1vw;
+        position: absolute;
+        top: 25vh;
+        left: 5vw;
+    }
+    .a{
+        position: absolute;
+        top: 70vh;
+        left: 150px;
+        font-family: karma;
+        font-size: 1.8vw;
+        margin: 20px 3px;
+    }
+    .b{
+        position: absolute;
+        top: 80vh;
+        left: 150px;
+        font-family: karma;
+        font-size: 1.8vw;
+        margin: 20px 3px;
+    }
+    .aboutus img{
+        height: 88.5vh;
+        width: 40vw;
+        position: absolute;
+        top: 6.5vh;
+        left: 55vw;
+    }
+    .about{
+        height:100vh;
+        width:100%;
+    }
+    .about h1{
+        position: absolute;
+        top: 105vh;
+        left: 39vw;
+        font-family: karma;
+        font-size: 4vw;
+        margin: 20px 3px;
+    }
+    .about h4{
+        position: absolute;
+        top: 116vh;
+        left: 44vw;
+        font-family: karma;
+        font-size: 21px;
+        margin: 20px 3px;
+    }
+    .security{
+        position: absolute;
+        top: 140vh;
+        left: 2vw;
+        border: 1px solid white;
+        box-shadow: 0 0 8px 0 #32c7ff;
+        height: 50vh;
+        width: 30vw;
+    }
+    .security:hover{
+        background-color:#32C7FF;
+        color: black;
+        border-radius: 20px;
+        box-shadow: 0 0 8px 0 black;
+    }
+    .security img{
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        top: 55px;
+        left: 14vw;
+    }
+    .security p{
+        position: relative;
+        top:130px;
+        text-align: center;
+        font-family: karma;
+        font-size: 1.8vw;
+    }
+    .fast{
+        position: absolute;
+        top: 140vh;
+        left: 34.5vw;
+        border: 1px solid white;
+        box-shadow: 0 0 8px 0 #32c7ff;
+        height: 50vh;
+        width: 30vw;
+    }
+    .fast:hover{
+        background-color:#32C7FF;
+        color: black;
+        border-radius: 20px;
+        box-shadow: 0 0 8px 0 black;
+    }
+    .fast img{
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        top: 55px;
+        left: 155px;
+    }
+    .fast p{
+        position: relative;
+        top:130px;
+        text-align: center;
+        font-family: karma;
+        font-size: 1.8vw;
+    }
+    .money{
+        position: absolute;
+        top: 140vh;
+        left: 67vw;
+        border: 1px solid white;
+        box-shadow: 0 0 8px 0 #32c7ff;
+        height: 50vh;
+        width: 30vw;
+    }
+    .money:hover{
+        background-color:#32C7FF;
+        color: black;
+        border-radius: 20px;
+        box-shadow: 0 0 8px 0 black;
+    }
+    .money img{
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        top: 55px;
+        left: 155px;
+    }
+    .money p{
+        position: relative;
+        top:130px;
+        text-align: center;
+        font-family: karma;
+        font-size: 1.8vw;
+    }
+}
+@media only screen and (min-width:200px) and (max-width:1000px) {
+    .footer{
+        width: 100%;
+        height: 50vh;
+        background-color: rgba(151, 149, 149, 1);
+        position: absolute;
+        top: 415vh;
+        }
+    }
+@media only screen and (min-width:1000px) and (max-width:2000px) {
+    .footer{
+        width: 100%;
+        height: 50vh;
+        background-color: rgba(151, 149, 149, 1);
+        position: absolute;
+        top: 220vh;
+        }
+}

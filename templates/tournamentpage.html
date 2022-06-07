@@ -1,0 +1,158 @@
+{% include "header.html" %}
+{%load static%}
+<link rel="stylesheet" href='{% static 'tournament.css'%}'>
+<div class="tournament">
+    <h2>Tournament Section</h2>
+    <button class="freefiree" id="freefiree">FreeFire Tournament</button>
+    <button class="pubgg" id="pubgg" >Pubg Tournament</button>
+    <button class="codd" id="codd">COD Tournament</button>
+</div>
+<section class="freefiretournamentsection" id="freefiretournamentsection">
+    {%for s in solo%}
+    <div class="solofftournament">
+        <img src="{%static "bermuda-map_compress35.jpg" %}"alt="bermuda map">
+        <p>Bermuda Map</p>
+        <h3>{{s.tittle}}</h3>
+        <h4>Total Player</h4>
+        <h5 class="player">{{s.totalplayer}}</h5>
+        <h4>Time</h4>
+        <h5 class="time">{{s.time}}</h5>
+        <h4>Total Prize</h4>
+        <h5 class="prize">{{s.prize}}</h5>
+        <button class="seemore">See More</button>
+        <button class="join">Join Tournament</button>
+    </div>
+    {% endfor %}
+    <div class="duofftournament">
+        <img src="{%static "bermuda-map_compress35.jpg" %}"alt="bermuda map">
+        <p>Bermuda Map</p>
+        <h3>Duo FreeFire Tournament #1 Match</h3>
+        <h4>Total PLayer</h4>
+        <h5 class="player">total playr</h5>
+        <h4>Time</h4>
+        <h5 class="time">time</h5>
+        <h4>Total Prize</h4>
+        <h5 class="prize">prize</h5>
+        <button class="seemore">See More</button>
+        <button class="join">Join Tournament</button>
+    </div>
+    <div class="squadfftournament">
+        <img src="{%static "bermuda-map_compress35.jpg" %}"alt="bermuda map">
+        <p>Bermuda Map</p>
+        <h3>Squad FreeFire Tournament #1 Match</h3>
+        <h4>Total PLayer</h4>
+        <h5 class="player">total playr</h5>
+        <h4>Time</h4>
+        <h5 class="time">time</h5>
+        <h4>Total Prize</h4>
+        <h5 class="prize">prize</h5>
+        <button class="seemore">See More</button>
+        <button class="join">Join Tournament</button>
+    </div>
+</section>
+<section class="pubgtournamentsection" id="pubgtournamentsection">
+    <div class="solopubgtournament">
+        <img src="{%static "erangel map.jpg" %}" alt=" map">
+        <p>Erangel Map</p>
+        <h3>Solo PUBG Tournament #1 Match</h3>
+        <h4>Total PLayer</h4>
+        <h5 class="player">total playr</h5>
+        <h4>Time</h4>
+        <h5 class="time">time</h5>
+        <h4>Total Prize</h4>
+        <h5 class="prize">prize</h5>
+        <button class="seemore">See More</button>
+        <button class="join">Join Tournament</button>
+    </div>
+    <div class="duopubgtournament">
+        <img src="{%static "erangel map.jpg" %}" alt=" map">
+        <p>Erangel Map</p>
+        <h3>Duo PUBG Tournament #1 Match</h3>
+        <h4>Total PLayer</h4>
+        <h5 class="player">total playr</h5>
+        <h4>Time</h4>
+        <h5 class="time">time</h5>
+        <h4>Total Prize</h4>
+        <h5 class="prize">prize</h5>
+        <button class="seemore">See More</button>
+        <button class="join">Join Tournament</button>
+    </div>
+    <div class="squadpubgtournament">
+        <img src="{%static "erangel map.jpg" %}" alt=" map">
+        <p>Erangel Map</p>
+        <h3>Squad PUBG Tournament #1 Match</h3>
+        <h4>Total PLayer</h4>
+        <h5 class="player">total playr</h5>
+        <h4>Time</h4>
+        <h5 class="time">time</h5>
+        <h4>Total Prize</h4>
+        <h5 class="prize">prize</h5>
+        <button class="seemore">See More</button>
+        <button class="join">Join Tournament</button>
+    </div>
+</section>
+<section class="codtournamentsection" id="codtournamentsection">
+    <div class="solocodtournament">
+        <img src="{%static "call-of-duty-mobile-isolated-map.jpg" %}" alt=" map">
+        <p>Isolated Map</p>
+        <h3>Solo COD Tournament #1 Match</h3>
+        <h4>Total PLayer</h4>
+        <h5 class="player">total playr</h5>
+        <h4>Time</h4>
+        <h5 class="time">time</h5>
+        <h4>Total Prize</h4>
+        <h5 class="prize">prize</h5>
+        <button class="seemore">See More</button>
+        <button class="join">Join Tournament</button>
+    </div>
+    <div class="duocodtournament">
+        <img src="{%static "call-of-duty-mobile-isolated-map.jpg" %}" alt=" map">
+        <p>Isolated Map</p>
+        <h3>Duo COD Tournament #1 Match</h3>
+        <h4>Total PLayer</h4>
+        <h5 class="player">total playr</h5>
+        <h4>Time</h4>
+        <h5 class="time">time</h5>
+        <h4>Total Prize</h4>
+        <h5 class="prize">prize</h5>
+        <button class="seemore">See More</button>
+        <button class="join">Join Tournament</button>
+    </div>
+    <div class="squadcodtournament">
+        <img src="{%static "call-of-duty-mobile-isolated-map.jpg" %}" alt="map">
+        <p>Isolated Map</p>
+        <h3>Squad COD Tournament #1 Match</h3>
+        <h4>Total PLayer</h4>
+        <h5 class="player">total playr</h5>
+        <h4>Time</h4>
+        <h5 class="time">time</h5>
+        <h4>Total Prize</h4>
+        <h5 class="prize">prize</h5>
+        <button class="seemore">See More</button>
+        <button class="join">Join Tournament</button>
+    </div>
+</section>
+{% include 'footer.html'%}
+<script>
+var freefirebtn=document.getElementById ("freefiree");
+var ffsection=document.getElementById ("freefiretournamentsection");
+var pubgsection=document.getElementById ("pubgtournamentsection");
+var codsection=document.getElementById ("codtournamentsection");
+freefirebtn.onclick=function kyou(){
+    ffsection.style.visibility="visible";
+    pubgsection.style.visibility="hidden";
+    codsection.style.visibility="hidden";
+}
+var pubgbtn=document.getElementById ("pubgg");
+pubgbtn.onclick=function kyou(){
+    ffsection.style.visibility="hidden";
+    pubgsection.style.visibility="visible";
+    codsection.style.visibility="hidden";
+}
+var codbtn=document.getElementById ("codd");
+codbtn.onclick=function kyou(){
+    ffsection.style.visibility="hidden";
+    pubgsection.style.visibility="hidden";
+    codsection.style.visibility="visible";
+}
+</script>

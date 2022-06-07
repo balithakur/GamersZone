@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamersZone</title>
+    <link rel="stylesheet" href='{% static 'header.css'%}'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;1,500&family=Source+Sans+Pro:ital@1&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400&family=Poppins:ital,wght@0,100;0,500;1,500&family=Source+Sans+Pro:ital,wght@0,600;0,700;1,400;1,600&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+   
+</head>
+   
+<body>
+    <div class="navbar" id="navbar">
+    <h1>GamersZone</h1>
+    <nav>
+        {%if request.user.is_authenticated%}
+        <ul>
+            <li><a href=""><button>Home</button></a></li>
+            <li><a href="logout"><button>Logout</button></a></li>
+            <li><a href="tournamentpage"><button>Tournaments</button></a></li>
+            <li><a href="profile"><button>My Profile</button></a></li>
+            <li><a href="aboutus"><button>About US</button></a></li>
+            <li><a href="contact"><button>Contact us</button></a></li>
+        </ul>
+        {%else%}
+        <ul>
+            <li><a href=""><button>Home</button></a></li>
+            <li><a href="login"><button>login</button></a></li>
+            <li><a href="createaccount"><button>Create Account</button></a></li>
+            <li><a href="aboutus"><button>About US</button></a></li>
+            <li><a href="contact"><button>Contact us</button></a></li>
+        </ul>
+        {%endif%}
+
+    </nav>
+    <img src="{%static "img_252115.png" %}" alt="bars" class="threebars" id="image">
+    </div>
+    <div class="onclick" id="onclick">
+        <nav>
+            {%if request.user.is_authenticated%}
+        <ul>
+            <li><a href=""><button>Home</button></a></li>
+            <li><a href="logout"><button>Logout</button></a></li>
+            <li><a href="tournamentpage"><button>Tournaments</button></a></li>
+            <li><a href="profile"><button>My Profile</button></a></li>
+            <li><a href="aboutus"><button>About US</button></a></li>
+            <li><a href="contact"><button>Contact us</button></a></li>
+        </ul>
+        {%else%}
+        <ul>
+            <li><a href=""><button>Home</button></a></li>
+            <li><a href="login"><button>login</button></a></li>
+            <li><a href="createaccount"><button>Create Account</button></a></li>
+            <li><a href="aboutus"><button>About US</button></a></li>
+            <li><a href="contact"><button>Contact us</button></a></li>
+        </ul>
+        {%endif%}
+        </nav>
+        <img src="{%static "x2.gif" %}" alt="close" id="gif">
+    </div>
+    <script>
+        let a=document.getElementById("onclick");
+        let b=document.getElementById("image");
+        let c=document.getElementById("navbar");
+        let d=document.getElementById("gif");
+
+        b.onclick= () =>{
+            a.style.visibility="visible";
+            b.style.visibility="hidden";
+            c.style.visibility="hidden";
+            a.style.position="fixed";
+            a.style.width="100vw"
+        }
+        d.onclick = () => {
+            a.style.visibility="hidden";
+            c.style.visibility="visible";
+            b.style.visibility="visible";
+        }
+        
+    </script>

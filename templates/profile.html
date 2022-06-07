@@ -1,0 +1,51 @@
+{%include "header.html"%}
+{%load static%}
+<link rel="stylesheet" href="{%static "profilee.css" %}">
+</section>
+<section class="profilee">
+    <div class="profile">
+        <img src="{%static "user-icon_ccexpress.png" %}" alt="user">
+        {%if request.user.is_authenticated%}
+        <h1>{{user.username}}</h1>
+        <h2>Your E-Mail</h2>
+        <h3>{{user.email}}</h3>
+        <h4>Your Phone Number</h4>
+        <input type="number" class="enteryournumber" placeholder="Enter Your Number">
+        <button class="otpbtn">Get OTP</button>
+        <h5>Enter Your OTP</h5>
+        <input type="number" class="enteryourotp" placeholder="Enter Your OTP">
+        <button class="registernumber">Register Your Number</button>
+        <h5>Enter Your OTP</h5>
+    </div>
+    <div class="profile2">
+        <h1>Your Password</h1>
+        <h2>{{user.email}}</h2>
+    </div>
+        {%endif%}
+</section>
+<section class="wallett">
+    <div class="wallet">
+        <h1>Wallet Section</h1>
+    </div>
+    <div class="addcash">
+        <h1>Add Cash</h1>
+        <h2>00 Rupees</h2>
+    </div>
+    <div class="bonuscash">
+        <h1>Bonus Cash</h1>
+        <h2>00 Rupees</h2>
+    </div>
+    <div class="totalcash">
+        <h1>Total Cash</h1>
+        <h2>00 Rupees</h2>
+    </div>
+    <div class="winningcash">
+        <h1>Winnings Cash</h1>
+        <h2>00 Rupees</h2>
+    </div>
+    <div class="button">
+        <button class="addcashbtn">Add Cash</button>
+        <button class="withdrawcashbtn">Withdraw Cash</button>
+    </div>
+</section>
+{%include "footer.html"%}

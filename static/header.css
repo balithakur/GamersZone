@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+}
+.navbar{
+    position: fixed;
+    z-index: 1;
+    height:80px;;
+    width:100%;
+    background-color:#32C7FF;
+}
+.navbar h1{
+    position: absolute;
+    left: 70px;
+    top:20px;
+}
+.navbar li{
+    position: relative;
+    left:40%;
+    display: inline-block;
+    margin: 10px;
+    top: 19px;
+}
+.navbar li button{
+    height: 30px;
+    width: 100px;
+    background-color:#32C7FF;
+    border:0.1px solid blue;
+    border-radius: 5px;
+}
+.navbar li button:hover{
+    border:2px solid black;
+    border-radius: 5px;
+    background-color:black;
+    color: white;
+    font-size: 13px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: black;
+    font-family:Source Serif Pro;
+}
+.navbar li a:hover{
+    border:2px solid black;
+    border-radius: 100px;
+    background-color: black;
+    color: white;
+}
+.navbar img{
+    visibility:hidden;
+}
+.onclick{
+    visibility:hidden;
+    position: absolute; 
+    top:-1vh;
+    z-index: 1;
+    width:1vw;
+}
+@media only screen and (min-width:200px) and (max-width:500px){
+    .navbar li a{
+        visibility: hidden;
+    }
+    .navbar h1 {
+        position: absolute;
+        left: 5vw;
+        top: 20px;
+        font-size: 25px;
+    }
+    .navbar img{
+        visibility: visible;
+        height: 32px;
+        width:32px;
+        position: absolute;
+        top:20px;
+        left:85vw;
+    }
+}
+@media only screen and (min-width:500px) and (max-width:1000px){
+    .navbar li a{
+        visibility: hidden;
+    }
+    .navbar h1 {
+        position: absolute;
+        left: 10vw;
+        top: 20px;
+        font-size: 32px;
+    }
+    .navbar img{
+        visibility: visible;
+        height: 32px;
+        width:32px;
+        position: absolute;
+        top:20px;
+        left:90vw;
+    }
+}
+.onclick{
+    height:75vh;
+    width:1vw;
+    background-color:#32C7FF;
+}
+.onclick li button{
+    height: 30px;
+    width: 100px;
+    background-color: #32C7FF;
+    border: 0.1px solid blue;
+    border-radius: 5px;
+    position: relative;
+    left: 34vw;
+    top: 15vh;
+    margin: 13px;
+}
+.onclick li button:hover{
+    border:2px solid black;
+    border-radius: 5px;
+    background-color:black;
+    color: white;
+    font-size: 13px;
+}
+.onclick img{
+    height: 42px;
+    width:42px;
+    position: absolute;
+    top:5vh;
+    left:47vw;
+}
+@media only screen and (min-width:500px) and (max-width:1000px){
+    .onclick li button{
+        position: relative;
+        left: 44vw;
+        top: 15vh;
+    }
+}
+@media only screen and (min-width:1000px){
+    .onclick{
+        visibility: hidden;
+        width:1vw;
+    }
+    .navbar img{
+        visibility: hidden;
+        width:1px;
+    }
+}

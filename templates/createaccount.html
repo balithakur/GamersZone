@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{%include 'header.html'%}
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamersZone/createaccount</title>
+    <link rel="stylesheet" href="{% static 'createaccountttt.css'%}">
+</head>
+<body>
+    <form action="createaccount" method="POST">
+    {% csrf_token %}
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <div class="login">
+        <img src="{%static "ConcreteFriendlyGuillemot-small.gif" %}" alt="picture">
+        <h1>Hey You !</h1>
+        <p><strong><mark>GamersZone Welocmes You</mark></strong><br><br>If you create a account in <strong>GamersZone</strong>, then <strong>GamersZone</strong>  gives you <br> opportunity to win real money playing games like <strong>FreeFire</strong> <br> <strong>PUBG</strong> , <strong>Call Of Duty</strong>
+            <br><br>
+            On the other hand <strong>GamersZone</strong> gives you best security and <br> <strong>GamersZone</strong>
+        provides you fast withdrwal your money to you <br> wallet aur your account.
+        </p>
+    </div>
+    <form action="logindiv" method="POST">
+    <div class="logindiv">
+        <h1>Create Account</h1>
+        <p><strong>Welcome </strong> Please fill the details and create your <strong> GamersZone Account </strong></p>
+        <img src="{%static "user-solid.svg" %}" alt="userimage" class="user">
+        <input type="text" placeholder="Enter Your UserName" class="username" name="name" required>
+        <img src="{%static "envelope-solid.svg"%}" alt="mailimage" class="mailimage">
+        <input type="text" placeholder="Enter Your E-mail" class="mail" name="mail" required>
+        <img src="{%static "key-solid.svg"%}" alt="keyimage" class="key1">
+        <input type="text" placeholder="Enter Your Password" class="password1" name="pass1" required>
+        <img src="{%static "key-solid.svg"%}" alt="keyimage" class="key2">
+        <input type="text" placeholder="Confirm Password" class="password2" name="pass5" required>
+        <button type="submit">Submit</button>
+    </div>
+    {% include "footer.html" %}
+</body>
+</html>

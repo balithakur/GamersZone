@@ -1,0 +1,23 @@
+{% include "header.html" %}
+{%load static%}
+
+<link rel="stylesheet" href='{% static 'loginnn.css'%}'>
+<form  action="login" method="POST">
+    {%csrf_token%}
+    <div class="login">
+        <img src="{%static 'ConcreteFriendlyGuillemot-small.gif' %}" alt="picture">
+        <h1>Welcome Back</h1>
+        <p>When you login in gamerszone then you see the tounranment<br> section and you are eligible to join any tournament.<br><br>
+            on the other hand if you do not have         <strong><mark>GamersZone account</mark></strong> <br>then first you create the <strong>account</strong> and <br>then come to the login page.
+        </p>
+    </div>
+    <div class="logindiv">
+        <h1>LogIn</h1>
+        <p><strong>Welcome back!</strong> Please log in your account</p>
+        <img src="{%static "envelope-solid.svg" %}" alt="mailimage" class="mailimage">
+        <input type="text" placeholder="Enter Your E-mail" class="mail" name="name">
+        <img src="{%static "key-solid.svg" %}" alt="keyimage" class="key1">
+        <input type="text" placeholder="Enter Your Password" class="password1" name="password">
+        <button type="submit" id="submit">Log In</button>
+    </div>
+{%include 'footer.html'%}

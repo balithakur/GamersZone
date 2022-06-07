@@ -1,0 +1,338 @@
+*{
+    margin:0;
+    padding:0;
+}
+.navbar{
+    height:80px;;
+    width:100%;
+    background-color:#32C7FF;
+}
+.navbar h1{
+    position: absolute;
+    left: 70px;
+    top:20px;
+    font-size: 32px;
+}
+.navbar li{
+    position: relative;
+    left: 25%;
+    display: inline-block;
+    margin: 10px;
+    top: 19px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: black;
+    font-family:Source Serif Pro;
+    font-weight: 550;
+    transition: background-color;
+    transition-timing-function: ease-in;
+}
+.navbar li a:hover{
+    border:2px solid black;
+    border-radius: 100px;
+    background-color: black;
+    color: white;
+}
+.profile img{
+    height:150px;
+    width:150px;
+    position: absolute;
+    top:150px;
+    left:575px;
+}
+.profile h1{
+    position: absolute;
+    top:330px;
+    left:577px;
+    font-family: karma;
+    font-size: 32px;
+}
+.profile h2{
+    position: absolute;
+    top:400px;
+    left:100px;
+    font-family: karma;
+    font-size: 27px;
+}
+.profile h3{
+    width:350px;
+    position: absolute;
+    top:450px;
+    left:100px;
+    font-family: karma;
+    font-size: 25px;
+    border-bottom:2px solid #32C7FF;
+}
+.profile h4{
+    width:350px;
+    position: absolute;
+    top:550px;
+    left:100px;
+    font-family: karma;
+    font-size: 25px;
+}
+.enteryournumber{
+    width:350px;
+    position: absolute;
+    top:600px;
+    left:100px;
+    font-family: karma;
+    font-size: 25px;
+}
+.otpbtn{
+    justify-content: center;
+    text-align: center;
+    height:50px;
+    width:130px;
+    position: absolute;
+    top:600px;
+    left:660px;
+    font-family: karma;
+    font-size: 25px;
+    background-color: #32C7FF;
+    border:1px solid #32C7FF;
+    border-radius: 10px;
+}
+.otpbtn:hover{
+    background-color: black;
+    color:white;
+    box-shadow: 0 0 8px 0 red;
+}
+.profile h5{
+    width:350px;
+    position: absolute;
+    top:700px;
+    left:100px;
+    font-family: karma;
+    font-size: 25px;
+}
+.enteryourotp{
+    width:350px;
+    position: absolute;
+    top:750px;
+    left:100px;
+    font-family: karma;
+    font-size: 25px;
+}
+.registernumber{
+    justify-content: center;
+    text-align: center;
+    height:50px;
+    width:290px;
+    position: absolute;
+    top:750px;
+    left:660px;
+    font-family: karma;
+    font-size: 25px;
+    background-color: #32C7FF;
+    border:1px solid #32C7FF;
+    border-radius: 10px;
+}
+.registernumber:hover{
+    background-color: black;
+    color:white;
+    box-shadow: 0 0 8px 0 red;
+}
+.profile2 h1{
+    width:350px;
+    position: absolute;
+    top:850px;
+    left:100px;
+    font-family: karma;
+    font-size: 25px;
+}
+.profile2 h2{
+    width:350px;
+    position: absolute;
+    top:900px;
+    left:100px;
+    font-family: karma;
+    font-size: 25px;
+    border-bottom:2px solid #32C7FF;
+}
+.wallet h1{
+    justify-content: center;
+    text-align: center;
+    width:30%;
+    position: absolute;
+    top:1100px;
+    left:500px;
+    font-family: karma;
+    font-size: 35px;
+    border-bottom:1px solid #32C7FF;
+}
+.addcash{
+    position: absolute;
+    top:1300px;
+    left:100px;
+    height:150px;
+    width:200px;
+    box-shadow: 0 0 8px 0 #32C7FF;
+}
+.addcash h1{
+    width:200px;
+    position: absolute;
+    top:30px;
+    left:40px;
+    font-family: karma;
+    font-size: 25px;
+}
+.addcash h2{
+    justify-content: center;
+    width:200px;
+    position: absolute;
+    top:80px;
+    left:40px;
+    font-family: karma;
+    font-size: 25px;
+}
+.addcash{
+    position: absolute;
+    top:1300px;
+    left:150px;
+    height:150px;
+    width:200px;
+    box-shadow: 0 0 8px 0 #32C7FF;
+}
+.addcash h1{
+    width:200px;
+    position: absolute;
+    top:30px;
+    left:40px;
+    font-family: karma;
+    font-size: 25px;
+}
+.addcash h2{
+    justify-content: center;
+    width:200px;
+    position: absolute;
+    top:80px;
+    left:40px;
+    font-family: karma;
+    font-size: 25px;
+}
+.addcash:hover{
+    background-color:#32C7FF;
+    color:black;
+}
+.bonuscash{
+    position: absolute;
+    top:1300px;
+    left:550px;
+    height:150px;
+    width:200px;
+    box-shadow: 0 0 8px 0 #32C7FF;
+}
+.bonuscash h1{
+    width:200px;
+    position: absolute;
+    top:30px;
+    left:40px;
+    font-family: karma;
+    font-size: 25px;
+}
+.bonuscash h2{
+    justify-content: center;
+    width:200px;
+    position: absolute;
+    top:80px;
+    left:40px;
+    font-family: karma;
+    font-size: 25px;
+}
+.bonuscash:hover{
+    background-color:#32C7FF;
+    color:black;
+}
+.totalcash{
+    position: absolute;
+    top:1300px;
+    left:950px;
+    height:150px;
+    width:200px;
+    box-shadow: 0 0 8px 0 #32C7FF;
+}
+.totalcash h1{
+    width:200px;
+    position: absolute;
+    top:30px;
+    left:40px;
+    font-family: karma;
+    font-size: 25px;
+}
+.totalcash h2{
+    justify-content: center;
+    width:200px;
+    position: absolute;
+    top:80px;
+    left:40px;
+    font-family: karma;
+    font-size: 25px;
+}
+.totalcash:hover{
+    background-color:#32C7FF;
+    color:black;
+}
+.winningcash h1{
+    position: absolute;
+    top:1550px;
+    left:550px;
+    font-family: karma;
+    font-size: 31px;
+}
+.winningcash h2{
+    text-align: center;
+    width:200px;
+    position: absolute;
+    top:1600px;
+    left:550px;
+    font-family: karma;
+    font-size: 31px;
+    border-bottom:2px solid #32C7FF;
+}
+.addcashbtn{
+    justify-content: center;
+    text-align: center;
+    height:50px;
+    width:200px;
+    position: absolute;
+    top:1800px;
+    left:300px;
+    font-family: karma;
+    font-size: 25px;
+    background-color: #32C7FF;
+    border:1px solid #32C7FF;
+    border-radius: 10px;
+}
+.addcashbtn:hover{
+    background-color: black;
+    color:white;
+    box-shadow: 0 0 8px 0 red;
+}
+.withdrawcashbtn{
+    justify-content: center;
+    text-align: center;
+    height:50px;
+    width:290px;
+    position: absolute;
+    top:1800px;
+    left:750px;
+    font-family: karma;
+    font-size: 25px;
+    background-color: #32C7FF;
+    border:1px solid #32C7FF;
+    border-radius: 10px;
+}
+.withdrawcashbtn:hover{
+    background-color: black;
+    color:white;
+    box-shadow: 0 0 8px 0 red;
+}
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(151, 149, 149, 1);
+    position: absolute;
+    top: 200vh;
+}

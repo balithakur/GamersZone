@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+}
+.navbar{
+    height:80px;;
+    width:100%;
+    background-color:#32C7FF;
+}
+.navbar h1{
+    position: absolute;
+    left: 70px;
+    top:20px;
+    font-size: 32px;
+}
+.navbar li{
+    position: relative;
+    left: 40%;
+    display: inline-block;
+    margin: 10px;
+    top: 19px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: black;
+    font-family:Source Serif Pro;
+    font-weight: 550;
+    transition: background-color;
+    transition-timing-function: ease-in;
+}
+.navbar li a:hover{
+    border:2px solid black;
+    border-radius: 100px;
+    background-color: black;
+    color: white;
+}
+.contactus pre{
+    font-size: 38px;
+    font-family: karma;
+    position: absolute;
+    top:200px;
+    left:100px;
+}
+.contactus h1{
+    font-size: 21px;
+    font-family: karma;
+    position: absolute;
+    top:320px;
+    left:150px;
+}
+.sendmessage{
+    height:430px;
+    width:300px;
+    position: absolute;
+    top:150px;
+    left:750px;
+    box-shadow: 0 0 8px #32C7FF;
+    border-radius: 10px;
+    border:1px solid #32C7FF;
+}
+.sendmessage h1{
+    font-size: 21px;
+    font-family: karma;
+    position: absolute;
+    top:20px;
+    left:50px;
+}
+.sendmessage img{
+    height: 21px;
+    width: 21px;
+    position: absolute;
+    top: 23px;
+    left: 220px;
+}
+.name{
+    height:30px;
+    width:190px;
+    position: absolute;
+    top:60px;
+    left:40px;
+    font-family: karma;
+}
+.mail{
+    height:30px;
+    width:190px;
+    position: absolute;
+    top:120px;
+    left:40px;
+    font-family: karma;
+}
+.subject{
+    height:30px;
+    width:190px;
+    position: absolute;
+    top:180px;
+    left:40px;
+    font-family: karma;
+}
+.problem{
+    justify-content: right;
+    height:90px;
+    width:190px;
+    position: absolute;
+    top:240px;
+    left:40px;
+    font-family: karma;
+    font-size: 21px;
+}
+.submit{
+    position: absolute;
+    top:360px;
+    left:110px;
+    height:40px;
+    width:80px;
+    font-size: 21px;
+    font-family: karma;
+    background-color: #32C7FF;
+    border:2px solid #32C7FF;
+    border-radius: 10px;
+}
+.submit:hover{
+    box-shadow: 0 0 8px 0 red;
+    background-color: black;
+    color: white;
+    border:2px solid black;
+}
+.emailcontact{
+    height:100px;
+    width:200px;
+    position: absolute;
+    top:450px;
+    left:100px;
+    border:1px solid #32C7FF;
+    box-shadow: 0 0 8px #32C7FF;
+}
+.emailcontact h1{
+    font-family: karma;
+    font-size: 32px;
+    text-align: center;
+}
+.emailcontact a{
+    position: absolute;
+    top:50px;
+    left:60px;
+    font-family: karma;
+    font-size: 21px;
+}
+.mailimage{
+    height:22px;
+    width:22px;
+    position: absolute;
+    top:55px;
+    left:10px;
+}
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(151, 149, 149, 1);
+    position: absolute;
+    top: 200vh;
+}

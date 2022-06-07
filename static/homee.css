@@ -1,0 +1,427 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.herosection{
+    height:600px;
+    width:100%;
+    background-image: linear-gradient(180deg, #14CAF2 0%, rgba(59, 157, 240, 0.57) 99.54%, rgba(11, 250, 221, 0.26) 100%);
+}
+.herosection pre{
+    font-size: 70px;
+    font-family: karma;
+    font-weight: 500;
+    position: absolute;
+    left: 75px;
+    top: 90px;
+}
+.herosection img{
+    height: 500px;
+    /* width: 60%; */
+    position: absolute;
+    left: 370px;
+    top: 100px;
+}
+.herosection p{
+    position: absolute;
+    top: 413px;
+    left: 58px;
+    font-size: 20px;
+    font-family: karma;
+}
+.herosection button{
+    position: absolute;
+    left: 179px;
+    top: 527px;
+    background-color:#32C7FF;
+    font-size: 16px;
+    justify-content: center;
+    align-content: center;
+    padding: 10px 24px;
+    border-radius: 10px;
+    border: 2px #13A7FB;
+    font-family: karma;
+    border: 1px solid black;
+    z-index:auto;
+}
+.herosection button:hover{
+    border: 1px solid black;
+    background-color: black;
+    color:white;
+    font-size: 19px;
+}
+.content h2{
+    position: absolute;
+    left: 417px;
+    top: 650px;
+    font-size: 46px;
+    font-family: karma;
+}
+.star1{
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    left: 110px;
+    top: 820px;
+    transform: rotate(93deg);
+}
+.contentfirstp{
+    font-size: 21px;
+    font-family: karma;
+    position: absolute;
+    left: 193px;
+    top: 828px;
+}
+.star2{
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    left: 110px;
+    top: 920px;
+    transform: rotate(193deg);
+}
+.contentsecondp{
+    font-size: 21px;
+    font-family: karma;
+    position: absolute;
+    left: 190px;
+    top: 924px;
+}
+.content button{
+    position: absolute;
+    top:1050px;
+    left:550px;
+    background-image: linear-gradient(180deg, #13A7FB 0%, rgba(62, 219, 254, 0.26) 100%);
+    font-size: 16px;
+    justify-content: center;
+    padding: 10px 24px;
+    border-radius: 10px;
+    border: 2px #13A7FB;
+    font-family: karma;
+    border: 1px solid black;
+}
+.content button:hover{
+    background-color: black;
+    color:white;
+}
+@media only screen and (min-width:200px) and (max-width:500px) {
+    .herosection{
+        height: 140vh;
+        width: 100%;
+        background-image: linear-gradient(180deg, #14CAF2 0%, rgba(59, 157, 240, 0.57) 99.54%, rgba(11, 250, 221, 0.26) 100%);
+    }
+    .herosection pre{
+        font-size: 17vw;
+        font-family: karma;
+        font-weight: 500;
+        position: absolute;
+        left: 0vw;
+        top: 12vh;
+    }
+    .herosection img{
+        height: 59vh;
+        width: 107vw;
+        position: absolute;
+        left: -8vw;
+        top: 81vh;
+    }
+    .herosection p{
+        position: absolute;
+        top: 50vh;
+        left: 5vw;
+        font-size: 20px;
+        font-family: karma;
+    }
+    .herosection button{
+        position: absolute;
+        left: 32vw;
+        top: 70vh;
+        background-color: #32C7FF;
+        font-size: 16px;
+        justify-content: center;
+        align-content: center;
+        padding: 10px 24px;
+        border-radius: 10px;
+        border: 2px #13A7FB;
+        font-family: karma;
+        border: 1px solid black;
+        z-index: auto;
+    }
+    .herosection button:hover{
+        border: 1px solid black;
+        background-color: black;
+        color:white;
+        font-size: 19px;
+    }
+    .content{
+        height:85vh;
+    }
+    .content h2{
+        position: absolute;
+        left: 10vw;
+        top: 147vh;
+        font-size: 8vw;
+        font-family: karma;
+    }
+    .star1{
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        left: 10vw;
+        top: 160vh;
+        transform: rotate(93deg);
+    }
+    .contentfirstp{
+        font-size: 21px;
+        font-family: karma;
+        position: absolute;
+        left: 25vw;
+        top: 160vh;
+    }
+    .star2{
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        left: 10vw;
+        top: 180vh;
+        transform: rotate(193deg);
+    }
+    .contentsecondp{
+        font-size: 21px;
+        font-family: karma;
+        position: absolute;
+        left: 25vw;
+        top: 180vh;
+    }
+    .content button{
+        position: absolute;
+        top: 200vh;
+        left: 31vw;
+        background-image: linear-gradient(180deg, #13A7FB 0%, rgba(62, 219, 254, 0.26) 100%);
+        font-size: 16px;
+        justify-content: center;
+        padding: 10px 24px;
+        border-radius: 10px;
+        border: 2px #13A7FB;
+        font-family: karma;
+        border: 1px solid black;
+    }
+    .content button:hover{
+        background-color: black;
+        color:white;
+    }
+}
+@media only screen and (min-width:500px) and (max-width:1000px) {
+    .herosection{
+        height: 140vh;
+        width: 100%;
+        background-image: linear-gradient(180deg, #14CAF2 0%, rgba(59, 157, 240, 0.57) 99.54%, rgba(11, 250, 221, 0.26) 100%);
+    }
+    .herosection pre{
+        font-size: 11vw;
+        font-family: karma;
+        font-weight: 500;
+        position: absolute;
+        left: 13vw;
+        top: 11vh;
+    }
+    .herosection img{
+        height: 59vh;
+        width: 107vw;
+        position: absolute;
+        left: -8vw;
+        top: 81vh;
+    }
+    .herosection p{
+        position: absolute;
+        top: 55vh;
+        left: 5vw;
+        font-size: 4vw;
+        font-family: karma;
+    }
+    .herosection button{
+        position: absolute;
+        left: 35vw;
+        top: 70vh;
+        background-color: #32C7FF;
+        font-size: 3vw;
+        justify-content: center;
+        align-content: center;
+        padding: 10px 24px;
+        border-radius: 10px;
+        border: 2px #13A7FB;
+        font-family: karma;
+        border: 1px solid black;
+        z-index: auto;
+    }
+    .herosection button:hover{
+        border: 1px solid black;
+        background-color: black;
+        color:white;
+        font-size: 19px;
+    }
+    .content{
+        height:85vh;
+    }
+    .content h2{
+        position: absolute;
+        left: 10vw;
+        top: 147vh;
+        font-size: 8vw;
+        font-family: karma;
+    }
+    .star1{
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        left: 10vw;
+        top: 160vh;
+        transform: rotate(93deg);
+    }
+    .contentfirstp{
+        font-size: 4vw;
+        font-family: karma;
+        position: absolute;
+        left: 25vw;
+        top: 160vh;
+    }
+    .star2{
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        left: 10vw;
+        top: 180vh;
+        transform: rotate(193deg);
+    }
+    .contentsecondp{
+        font-size: 4vw;
+        font-family: karma;
+        position: absolute;
+        left: 25vw;
+        top: 180vh;
+    }
+    .content button{
+        position: absolute;
+        top: 200vh;
+        left: 35vw;
+        background-image: linear-gradient(180deg, #13A7FB 0%, rgba(62, 219, 254, 0.26) 100%);
+        font-size: 3vw;
+        justify-content: center;
+        padding: 10px 24px;
+        border-radius: 10px;
+        border: 2px #13A7FB;
+        font-family: karma;
+        border: 1px solid black;
+    }
+    .content button:hover{
+        background-color: black;
+        color:white;
+    }
+}
+@media only screen and (min-width:1000px) and (max-width:2000px) {   
+    .herosection pre{
+        font-size: 5vw;
+    }
+    .herosection img {
+        height: 500px;
+        width: 68%;
+        position: absolute;
+        left: 30vw;
+        top: 100px;
+    }
+    .herosection p{
+        position: absolute;
+        top: 413px;
+        left: 4vw;
+        font-size: 1.8vw;
+        font-family: karma;
+    }
+    .herosection button{
+        position: absolute;
+        left: 10vw;
+        top: 527px;
+        background-color:#32C7FF;
+        font-size: 1.2vw;
+        justify-content: center;
+        align-content: center;
+        padding: 10px 24px;
+        border-radius: 10px;
+        border: 2px #13A7FB;
+        font-family: karma;
+        border: 1px solid black;
+        z-index:auto;
+    }
+    .herosection button:hover{
+        border: 1px solid black;
+        background-color: black;
+        color:white;
+        font-size: 19px;
+    }
+    .content h2{
+        position: absolute;
+        left: 24vw;
+        top: 650px;
+        font-size: 5vw;
+        font-family: karma;
+    }
+    .star1{
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        left: 110px;
+        top: 820px;
+        transform: rotate(93deg);
+    }
+    .contentfirstp{
+        font-size: 1.6vw;
+        font-family: karma;
+        position: absolute;
+        left: 193px;
+        top: 810px;
+    }
+    .star2{
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        left: 110px;
+        top: 920px;
+        transform: rotate(193deg);
+    }
+    .contentsecondp{
+        font-size: 1.6vw;
+        font-family: karma;
+        position: absolute;
+        left: 190px;
+        top: 915px;
+    }
+    .content button{
+        position: absolute;
+        top:1050px;
+        left:550px;
+        background-image: linear-gradient(180deg, #13A7FB 0%, rgba(62, 219, 254, 0.26) 100%);
+        font-size: 1.2vw;
+        justify-content: center;
+        padding: 10px 24px;
+        border-radius: 10px;
+        border: 2px #13A7FB;
+        font-family: karma;
+        border: 1px solid black;
+    }
+    .content button:hover{
+        background-color: black;
+        color:white;
+    }
+}
+.threebars{
+    visibility: hidden;
+}
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(151, 149, 149, 1);
+    position: absolute;
+    top: 215vh;
+}
+
+

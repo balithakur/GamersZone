@@ -1,0 +1,27 @@
+{% include "header.html" %}
+{%load static%}
+<link rel="stylesheet" href='{% static 'homee.css'%}'>
+    <div class="herosection">
+    <pre><b>PLAY
+    AND
+       EARN</b>
+    </pre>
+    <img src="{%static 'call_of_duty_4_modern_warfare-5_ccexpress.png'%}" alt="ffpic">
+    <p>GamersZone Organises <strong>online Tournament</strong> <br>where you can earn money and many more offers.</p>
+    <button id="createaccountbtn">Create account</button>
+    </div>
+    <div class="content">
+        <h2><b>How To Join Tournament</b></h2>
+        <img src="{%static 'star.png' %}" alt="star" class="star1"> <p class="contentfirstp"> First you go to the tournament section.</p>
+        <img src="{%static 'star.png' %}" alt="star" class="star2"> <p class="contentsecondp">Then you need to join a tournament and pay money.</p>
+        <button>Tournament section</button>
+    </div>
+    {% include "footer.html" %}
+    <script>
+        var accountbtn=document.getElementById ("createaccountbtn");
+         accountbtn.onclick=function a(){
+         location.href="createaccount";
+           }
+    </script>
+</body>
+</html>

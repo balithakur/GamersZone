@@ -1,0 +1,26 @@
+{%include 'header.html'%}
+{%load static%}
+<link rel="stylesheet" href="{%static "contactt.css" %}">
+<section class="contact">
+    <div class="contactus">
+        <pre><b>Let's Chat.
+Tell Me About Your Problem.</b>
+        </pre>
+        <h1>Let's Solve That Problem Together</h1>
+    </div>
+    <div class="sendmessage">
+        <h1><b>Send Us Message</b></h1>
+        <img src="{%static "paper-plane-solid.svg" %}" alt="sendimage">
+        <input type="text" placeholder="Enter Your Username" class="name">
+        <input type="email" placeholder="Enter Your Email" class="mail">
+        <input type="text" placeholder="Subject" class="subject">
+        <input type="text" placeholder="Enter Your Problem" class="problem">
+        <button class="submit">Submit</button>
+    </div>
+    <div class="emailcontact">
+        <h1>Mail Us</h1>
+        <a href=mailto: "balisc04@gmail.com">Send Email</a>
+        <img src="{%static "envelope-solid.svg"  %}" alt="mailimage" class="mailimage">
+    </div>
+</section>
+{%include 'footer.html'%}
