@@ -1,38 +1,10 @@
 *{
-    margin:0;
-    padding:0;
+    margin:0px;
+    padding:0px;
 }
-.navbar{
-    height:80px;;
-    width:100%;
-    background-color:#32C7FF;
-}
-.navbar h1{
-    position: absolute;
-    left: 70px;
-    top:20px;
-    font-size: 32px;
-}
-.navbar li{
-    position: relative;
-    left: 40%;
-    display: inline-block;
-    margin: 10px;
-    top: 19px;
-}
-.navbar li a{
-    text-decoration: none;
-    color: black;
-    font-family:Source Serif Pro;
-    font-weight: 550;
-    transition: background-color;
-    transition-timing-function: ease-in;
-}
-.navbar li a:hover{
-    border:2px solid black;
-    border-radius: 100px;
-    background-color: black;
-    color: white;
+.contactus{
+    height: 40vh;
+    width: 100vw;
 }
 .contactus pre{
     font-size: 38px;
@@ -109,7 +81,7 @@
 .submit{
     position: absolute;
     top:360px;
-    left:110px;
+    left:80px;
     height:40px;
     width:80px;
     font-size: 21px;
@@ -152,10 +124,415 @@
     top:55px;
     left:10px;
 }
+@media only screen and (min-width:500px) and (max-width:1000px){
+    .contactus{
+        height: 40vh;
+        width: 100vw;
+    }
+    .contactus pre{
+        font-size: 7vw;
+        font-family: karma;
+        position: absolute;
+        top: 200px;
+        left: 5vw;
+    }
+    .contactus h1{
+        font-size: 4vw;
+        font-family: karma;
+        position: absolute;
+        top: 45vh;
+        left: 21vw;
+    }
+    .sendmessage{
+        height: 60vh;
+        width: 90vw;
+        position: absolute;
+        top: 90vh;
+        left: 5vw;
+        box-shadow: 0 0 8px #32c7ff;
+        border-radius: 10px;
+        border: 1px solid #32C7FF;
+    }
+    .sendmessage h1{
+        font-size: 5vw;
+        font-family: karma;
+        position: absolute;
+        top: 20px;
+        left: 17vw;
+    }
+    .sendmessage img{
+        height: 4vh;
+        width: 4vw;
+        position: absolute;
+        top: 2.4vh;
+        left: 58vw;
+    }
+    .name{
+        height: 4vh;
+        width: 50vw;
+        position: absolute;
+        top: 10vh;
+        border: 1px solid black;
+        left: 17vw;
+        font-size: 3vw;
+        font-family: karma;
+    }
+    .mail{
+        height: 4vh;
+        width: 50vw;
+        position: absolute;
+        top: 17vh;
+        font-size: 3vw;
+        border: 1px solid black;
+        left: 17vw;
+        font-family: karma;
+    }
+    .subject{
+        height: 4vh;
+        width: 50vw;
+        position: absolute;
+        top: 24vh;
+        border: 1px solid black;
+        left: 17vw;
+        font-size: 3vw;
+        font-family: karma;
+    }
+
+    .problem{
+        justify-content: center;
+        height: 10vh;
+        width: 50vw;
+        position: absolute;
+        top: 32vh;
+        left: 17vw;
+        border: 1px solid black;
+        font-family: karma;
+        font-size: 4vw;
+    }
+    .submit{
+        position: absolute;
+        top: 50vh;
+        left: 38vw;
+        height: 40px;
+        width: 80px;
+        font-size: 21px;
+        font-family: karma;
+        background-color: #32C7FF;
+        border: 2px solid #32C7FF;
+        border-radius: 10px;
+    }
+    .submit:hover{
+        box-shadow: 0 0 8px 0 red;
+        background-color: black;
+        color: white;
+        border:2px solid black;
+    }
+    .emailcontact{
+        height: 13vh;
+        width: 35vw;
+        position: absolute;
+        top: 61vh;
+        left: 32vw;
+        border: 1px solid #32C7FF;
+        box-shadow: 0 0 8px #32c7ff;
+    }
+    .emailcontact h1{
+        font-family: karma;
+        font-size: 32px;
+        text-align: center;
+    }
+    .emailcontact a{
+        position: absolute;
+        top:50px;
+        left:60px;
+        font-family: karma;
+        font-size: 3vw;
+    }
+    .mailimage{
+        height:22px;
+        width:22px;
+        position: absolute;
+        top:55px;
+        left:10px;
+    }
+}
+@media only screen and (min-width:500px) and (max-width:1000px){
+    .contactus{
+        height: 40vh;
+        width: 100vw;
+    }
+    .contactus pre{
+        font-size: 7vw;
+        font-family: karma;
+        position: absolute;
+        top: 200px;
+        left: 5vw;
+    }
+    .contactus h1{
+        font-size: 4vw;
+        font-family: karma;
+        position: absolute;
+        top: 45vh;
+        left: 21vw;
+    }
+    .sendmessage{
+        height: 60vh;
+        width: 90vw;
+        position: absolute;
+        top: 90vh;
+        left: 5vw;
+        box-shadow: 0 0 8px #32c7ff;
+        border-radius: 10px;
+        border: 1px solid #32C7FF;
+    }
+    .sendmessage h1{
+        font-size: 5vw;
+        font-family: karma;
+        position: absolute;
+        top: 20px;
+        left: 17vw;
+    }
+    .sendmessage img{
+        height: 4vh;
+        width: 4vw;
+        position: absolute;
+        top: 2.4vh;
+        left: 58vw;
+    }
+    .name{
+        height: 4vh;
+        width: 50vw;
+        position: absolute;
+        top: 10vh;
+        border: 1px solid black;
+        left: 17vw;
+        font-size: 3vw;
+        font-family: karma;
+    }
+    .mail{
+        height: 4vh;
+        width: 50vw;
+        position: absolute;
+        top: 17vh;
+        font-size: 3vw;
+        border: 1px solid black;
+        left: 17vw;
+        font-family: karma;
+    }
+    .subject{
+        height: 4vh;
+        width: 50vw;
+        position: absolute;
+        top: 24vh;
+        border: 1px solid black;
+        left: 17vw;
+        font-size: 3vw;
+        font-family: karma;
+    }
+
+    .problem{
+        justify-content: center;
+        height: 10vh;
+        width: 50vw;
+        position: absolute;
+        top: 32vh;
+        left: 17vw;
+        border: 1px solid black;
+        font-family: karma;
+        font-size: 4vw;
+    }
+    .submit{
+        position: absolute;
+        top: 50vh;
+        left: 38vw;
+        height: 40px;
+        width: 80px;
+        font-size: 21px;
+        font-family: karma;
+        background-color: #32C7FF;
+        border: 2px solid #32C7FF;
+        border-radius: 10px;
+    }
+    .submit:hover{
+        box-shadow: 0 0 8px 0 red;
+        background-color: black;
+        color: white;
+        border:2px solid black;
+    }
+    .emailcontact{
+        height: 13vh;
+        width: 35vw;
+        position: absolute;
+        top: 61vh;
+        left: 32vw;
+        border: 1px solid #32C7FF;
+        box-shadow: 0 0 8px #32c7ff;
+    }
+    .emailcontact h1{
+        font-family: karma;
+        font-size: 32px;
+        text-align: center;
+    }
+    .emailcontact a{
+        position: absolute;
+        top:50px;
+        left:60px;
+        font-family: karma;
+        font-size: 3vw;
+    }
+    .mailimage{
+        height:22px;
+        width:22px;
+        position: absolute;
+        top:55px;
+        left:10px;
+    }
+}
+@media only screen and (min-width:200px) and (max-width:500px){
+    .contactus{
+        height: 40vh;
+        width: 100vw;
+    }
+    .contactus pre{
+        font-size: 7vw;
+        font-family: karma;
+        position: absolute;
+        top: 200px;
+        left: 5vw;
+    }
+    .contactus h1{
+        font-size: 4vw;
+        font-family: karma;
+        position: absolute;
+        top: 45vh;
+        left: 21vw;
+    }
+    .sendmessage{
+        height: 60vh;
+        width: 90vw;
+        position: absolute;
+        top: 90vh;
+        left: 5vw;
+        box-shadow: 0 0 8px #32c7ff;
+        border-radius: 10px;
+        border: 1px solid #32C7FF;
+    }
+    .sendmessage h1{
+        font-size: 5vw;
+        font-family: karma;
+        position: absolute;
+        top: 20px;
+        left: 17vw;
+    }
+    .sendmessage img{
+        height: 4vh;
+        width: 4vw;
+        position: absolute;
+        top: 2.4vh;
+        left: 58vw;
+    }
+    .name{
+        height: 4vh;
+        width: 50vw;
+        position: absolute;
+        top: 10vh;
+        border: 1px solid black;
+        left: 17vw;
+        font-size: 3vw;
+        font-family: karma;
+    }
+    .mail{
+        height: 4vh;
+        width: 50vw;
+        position: absolute;
+        top: 17vh;
+        font-size: 3vw;
+        border: 1px solid black;
+        left: 17vw;
+        font-family: karma;
+    }
+    .subject{
+        height: 4vh;
+        width: 50vw;
+        position: absolute;
+        top: 24vh;
+        border: 1px solid black;
+        left: 17vw;
+        font-size: 3vw;
+        font-family: karma;
+    }
+
+    .problem{
+        justify-content: center;
+        height: 10vh;
+        width: 50vw;
+        position: absolute;
+        top: 32vh;
+        left: 17vw;
+        border: 1px solid black;
+        font-family: karma;
+        font-size: 4vw;
+    }
+    .submit{
+        position: absolute;
+        top: 50vh;
+        left: 38vw;
+        height: 40px;
+        width: 80px;
+        font-size: 21px;
+        font-family: karma;
+        background-color: #32C7FF;
+        border: 2px solid #32C7FF;
+        border-radius: 10px;
+    }
+    .submit:hover{
+        box-shadow: 0 0 8px 0 red;
+        background-color: black;
+        color: white;
+        border:2px solid black;
+    }
+    .emailcontact{
+        height: 13vh;
+        width: 35vw;
+        position: absolute;
+        top: 61vh;
+        left: 32vw;
+        border: 1px solid #32C7FF;
+        box-shadow: 0 0 8px #32c7ff;
+    }
+    .emailcontact h1{
+        font-family: karma;
+        font-size: 29px;
+        text-align: center;
+    }
+    .emailcontact a{
+        position: absolute;
+        top: 50px;
+        left: 12vw;
+        font-family: karma;
+        font-size: 4vw;
+    }
+    .mailimage{
+        height:22px;
+        width:22px;
+        position: absolute;
+        top:55px;
+        left:10px;
+    }
+}
 .footer{
-    width: 100%;
+    width: 100vw;
     height: 50vh;
     background-color: rgba(151, 149, 149, 1);
     position: absolute;
-    top: 200vh;
+    top: 105vh;
 }
+@media only screen and (min-width:200px) and (max-width:1000px) {
+    .footer{
+        width: 100vw;
+        height: 50vh;
+        background-color: rgba(151, 149, 149, 1);
+        position: absolute;
+        top: 180vh;
+        }
+    }
