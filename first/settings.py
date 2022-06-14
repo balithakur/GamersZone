@@ -50,6 +50,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+     #add by me
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'first.urls'
@@ -122,10 +124,10 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 #added manually
-#STATICFILES_DIRS = [
-#   os.path.join(BASE_DIR ,"static"),
-#]
-STATIC_ROOT = os.path.join(BASE_DIR,"static"),
+STATICFILES_DIRS = [
+   os.path.join(BASE_DIR ,"static"),
+]
+#STATIC_ROOT = os.path.join(BASE_DIR,"static"),
 
 
 
@@ -133,3 +135,6 @@ STATIC_ROOT = os.path.join(BASE_DIR,"static"),
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#add to deploy on heroku
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
