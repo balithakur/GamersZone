@@ -16,6 +16,6 @@ class solofftournament(models.Model):
 
 
 class freefiredata(models.Model):
+    user=models.OneToOneField(User, on_delete=models.CASCADE ,primary_key=True)
     ffname=models.CharField(max_length=30)
     ffid=models.IntegerField()
-    user=models.OneToOneField(User, on_delete=models.CASCADE ,primary_key=True)

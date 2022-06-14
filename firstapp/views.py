@@ -105,8 +105,8 @@ def ffdata(request):
         ffid=request.POST["ffid"]
         ffdata=freefiredata(ffname=ffname,ffid=ffid)
         ffdata.save()
-       
-            
+        if ffdata.save:
+          print("yes")
     return render(request, 'profile.html')
 
 
