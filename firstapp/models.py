@@ -1,5 +1,4 @@
 from operator import truediv
-from tkinter import CASCADE
 from django.db import models
 from django.contrib.auth.models import User
 # Create your models here.
