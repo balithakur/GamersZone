@@ -1,7 +1,9 @@
+from email.message import Message
+from venv import create
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.shortcuts import render 
-#from firstapp.models import account
+from firstapp.models import freefiredata
 from  django.http import  HttpResponse ,HttpResponseRedirect
 from django.contrib.auth import authenticate , login , logout
 from firstapp.models import solofftournament
@@ -28,7 +30,7 @@ def signup(request):
         try:
             #temp= account.objects.get(name=name)
             temp= User.objects.get(username=name)
-            return HttpResponse("username already exist")
+            messages.success(request, "username already exist")
         except Exception:
             pass
         try:
@@ -90,16 +92,31 @@ def loginn(request):
     return render(request, 'login.html')
 
 def profile(request):
+    if request.method =="POST":
+        logout(request)
+        messages.success(request,"your account sucessfully logout")
+        return HttpResponseRedirect('login')
+    return render(request, 'profile.html')
+
+
+def ffdata(request):
+    if request.method =="POST":
+        ffname=request.POST["ffname"]
+        ffid=request.POST["ffid"]
+        ffdata=freefiredata(ffname=ffname,ffid=ffid)
+        ffdata.save()
+       
+            
     return render(request, 'profile.html')
 
 
 def contact(request):
     return render(request, 'contact.html')
 
-def loggout(request):
-    if request.method =="POST":
-        logout(request)
-        messages.success(request,"your account sucessfully logout")
-        return HttpResponseRedirect('contact')
-    return render(request, 'logout.html')
+#def loggout(request):
+#    if request.method =="POST":
+#        logout(request)
+#        messages.success(request,"your account sucessfully logout")
+#        return HttpResponseRedirect('contact')
+#    return render(request, 'logout.html')
         

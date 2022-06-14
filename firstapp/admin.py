@@ -1,6 +1,7 @@
 from django.contrib import admin
 #from firstapp.models import account
-from firstapp.models import solofftournament
+from firstapp.models import solofftournament, freefiredata
+
 
 # Register your models here.
 #custom model for user account registration
@@ -10,3 +11,6 @@ from firstapp.models import solofftournament
 class tournament(admin.ModelAdmin):
     list_display = ('tittle','totalplayer','prize','time')
 admin.site.register(solofftournament ,tournament)
+
+class ffdata(admin.ModelAdmin):
+    admin.site.register(freefiredata)

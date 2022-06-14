@@ -1,51 +1,107 @@
 {%include "header.html"%}
 {%load static%}
-<link rel="stylesheet" href="{%static "profilee.css" %}">
-</section>
-<section class="profilee">
+<link rel="stylesheet" href="{%static "profileeeee.css" %}">
     <div class="profile">
-        <img src="{%static "user-icon_ccexpress.png" %}" alt="user">
         {%if request.user.is_authenticated%}
-        <h1>{{user.username}}</h1>
+        <h1>UserName</h1>
+        <h4>{{user.username}}</h4>
         <h2>Your E-Mail</h2>
         <h3>{{user.email}}</h3>
-        <h4>Your Phone Number</h4>
-        <input type="number" class="enteryournumber" placeholder="Enter Your Number">
-        <button class="otpbtn">Get OTP</button>
-        <h5>Enter Your OTP</h5>
-        <input type="number" class="enteryourotp" placeholder="Enter Your OTP">
-        <button class="registernumber">Register Your Number</button>
-        <h5>Enter Your OTP</h5>
-    </div>
-    <div class="profile2">
-        <h1>Your Password</h1>
-        <h2>{{user.email}}</h2>
-    </div>
         {%endif%}
-</section>
-<section class="wallett">
-    <div class="wallet">
-        <h1>Wallet Section</h1>
-    </div>
-    <div class="addcash">
-        <h1>Add Cash</h1>
-        <h2>00 Rupees</h2>
-    </div>
-    <div class="bonuscash">
-        <h1>Bonus Cash</h1>
-        <h2>00 Rupees</h2>
-    </div>
-    <div class="totalcash">
-        <h1>Total Cash</h1>
-        <h2>00 Rupees</h2>
-    </div>
-    <div class="winningcash">
-        <h1>Winnings Cash</h1>
-        <h2>00 Rupees</h2>
-    </div>
-    <div class="button">
-        <button class="addcashbtn">Add Cash</button>
-        <button class="withdrawcashbtn">Withdraw Cash</button>
-    </div>
-</section>
+        <form action="profile" method="POST">
+        {%csrf_token%}
+        <div class="button">    
+            <button class="buttonbtn" type="submit">LogOut</button>
+        </div>
+        </form>
+        <button  class="ffbtn" id="ffbtn">FreeFire</button>
+        <div class="freefirename" id="freefirename">
+            <form action="ffdata" method="POST">
+            {%csrf_token%}
+            <input type="text" placeholder="Enter Your FreeFire InGame Name" class="ingamename" name="ffname" required>
+            <input type="text" placeholder="FreeFire InGame IdNumber" class="ingamenumber" name="ffid" required>
+            <button type="submit" class="ffvalue" id="ffvalue">Submit</button>
+            </form>
+        </div>
+        <button class="pubgbtn" id="pubgbtn">PUBG</button>
+        <div class="pubgname" id="pubgname">
+            <input type="text" placeholder="Enter Your PUBG InGame Name" class="pubggamename">
+            <input type="text" placeholder="Enter Your PUBG InGame Id Number" class="pubgid">
+            <button type="submit" class="pubgvalue">Submit</button>
+        </div>
+        <button type="submit" class="codbtn" id="codbtn">Call Of Duty</button>
+        <div class="codname" id="codname">
+            <input type="text" placeholder="Enter Your COD InGame Name" class="codgamename">
+            <input type="text" placeholder="Enter Your COD InGame Id Number" class="codgameid">
+            <button type="submit" class="codvalue">Submit</button>
+        </div>
+        <div class="ffdata">
+            <h1>Your Freefire Data</h1>
+            <h2 class="yourname">Your FreeFire GameName</h2>
+            <h3>{{user.ffname}}</h3>
+            <h2 class="yourid">Your FreeFire GameId</h2>
+            <h3>{{user.ffid}}</h3>
+        </div>
+        <div class="pubgdata">
+            <h1>Your PUBG Data</h1>
+            <h2>Your PUBG GameName</h2>
+            <h3>@@@@@</h3>
+            <h2>Your PUBG GameId</h2>
+            <h3>0000</h3>
+        </div>
+        <div class="coddata">
+            <h1>Your COD Data</h1>
+            <h2>Your COD GameName</h2>
+            <h3>@@@@@</h3>
+            <h2>Your COD GameId</h2>
+            <h3>0000</h3>
+        </div>
+        <script>
+            let ffbtn = document.getElementById("ffbtn");
+            let ffsection = document.getElementById("freefirename");
+            let pubgbtn = document.getElementById("pubgbtn");
+            let pubgsection = document.getElementById("pubgname");
+            let codbtnn = document.getElementById("codbtn");
+            let codsection = document.getElementById("codname");
+            ffbtn.onclick = () => {
+                ffsection.style.visibility = "visible";
+                pubgsection.style.visibility = "hidden";
+                codsection.style.visibility = "hidden";
+                ffbtn.style.backgroundColor = "#32C7FF";
+                ffbtn.style.color = "black";
+                pubgbtn.style.backgroundColor = "white";
+                pubgbtn.style.color = "black";
+                codbtn.style.backgroundColor = "white";
+                codbtn.style.color = "black";
+                ffbtn.style.border = "1px solid black";
+                ffbtn.style.borderRadius = "5px";
+            }
+            pubgbtn.onclick = () => {
+                ffsection.style.visibility = "hidden";
+                pubgsection.style.visibility = "visible";
+                codsection.style.visibility = "hidden";
+                pubgbtn.style.backgroundColor = "#32C7FF";
+                pubgbtn.style.color = "black";
+                ffbtn.style.backgroundColor = "white";
+                ffbtn.style.color = "black";
+                codbtn.style.backgroundColor = "white";
+                codbtn.style.color = "black";
+                pubgbtn.style.border = "1px solid black";
+                pubgbtn.style.borderRadius = "5px";
+            }
+            codbtnn.onclick = () => {
+                ffsection.style.visibility = "hidden";
+                pubgsection.style.visibility = "hidden";
+                codsection.style.visibility = "visible";
+                codbtn.style.backgroundColor = "#32C7FF";
+                codbtn.style.color = "black";
+                codbtn.style.border = "1px solid black";
+                codbtn.style.borderRadius = "5px";
+                ffbtn.style.backgroundColor = "white";
+                ffbtn.style.color = "black";
+                pubgbtn.style.backgroundColor = "white";
+                pubgbtn.style.color = "black";
+            }
+        </script>
+
 {%include "footer.html"%}
