@@ -1,3 +1,4 @@
+from atexit import register
 from email.message import Message
 from venv import create
 from django.contrib.auth.models import User
@@ -44,7 +45,7 @@ def signup(request):
         else:
             print(name ,mail ,pass5 )
             #createuseraccount.save()
-            user=User.object.create_user(name, mail , pass5)
+            user=User.object.create_user(name, mail , pass5,)
             user.save()
             return HttpResponseRedirect('thankyoupage') 
     return render(request, 'createaccount.html' )
@@ -103,10 +104,8 @@ def ffdata(request):
     if request.method =="POST":
         ffname=request.POST["ffname"]
         ffid=request.POST["ffid"]
-        ffdata=freefiredata(ffname=ffname,ffid=ffid)
-        ffdata.save()
-        if ffdata.save:
-          print("yes")
+        ffdataa=freefiredata(ffname=ffname,ffid=ffid)
+        ffdataa.save()
     return render(request, 'profile.html')
 
 

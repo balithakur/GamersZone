@@ -50,8 +50,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-     #add by me
-    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'first.urls'
@@ -136,5 +134,3 @@ STATIC_ROOT = os.path.join(BASE_DIR,"static"),
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#add to deploy on heroku
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
