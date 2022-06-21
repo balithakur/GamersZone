@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamerszone</title>
+    <link rel="stylesheet" href='{% static 'landpage.css'%}'>
+</head>
+<body>
+        <video src="Battlefield_2042_Official_Gameplay_Trailer_AdobeExpress_AdobeExpress__1__AdobeExpress.mp4" muted loop autoplay > h</video>
+        <div class="landpage">
+            <h1><strong>GamersZone</strong></h1>
+            <button class="landbtn" id="landbtn">Open GamersZone</button>
+        </div>
+        <div class="herosection">
+            <h1>GamersZone</h1>
+            <p>GamersZone basically organizes online tournament where you can join tournament and earn real money.<br>       GamersZone organises only three games tournament <mark>FREEFIRE MAX</mark>, <mark>BGMI</mark>, <mark>CALL OF DUTY</mark></p>.
+        </div>
+        <div class="games">
+            <h1>Games you can play on GamersZone</h1>
+             <div class="freefire"> 
+                <img src="{% static "ff max.jpg" %}" alt="freefire pic">
+                <p>Garena Free Fire MAX is the<strong> thrilling third-person<br> survival shooter</strong> for mobile devices that throws 50<br> players onto an isolated island to fight for their lives.<br> Parachute down to the island’s surface and stay alive<br> for as long as you can. <mark>Free Fire MAX </mark> is designed <br> exclusively to deliver premium gameplay experience <br> in a Battle Royale. Enjoy a variety of exciting game <br> modes with all Free Fire players via exclusive Firelink <br> technology. Experience combat like never before with <br><strong><mark>Ultra HD</mark></strong> resolutions and breathtaking effects. Ambush, <br>snipe, and survive; There is only one goal: to survive <br>and be the last one standing.</p>
+             </div>
+             <div class="bgmi">
+                <p>
+  Battlegrounds Mobile India, or <mark>BGMI</mark>, is a player-versus-player shooter<br> game in which up to 100 players compete in a battle royale, a type of <br> large-scale last man standing deathmatch in which players compete to <br> be the last one standing. Players can enter the match as individuals or <br> as small groups of up to four.
+                </p>
+                <img src="{% static  "Battlegrounds-Mobile-India2.webp" %}"alt="BGMI pic">
+             </div>
+        </div>
+        <div class="cod">
+            <img src="{% static  "cod.jpg" %}" alt="cod pic">
+            <pre><mark>Call of Duty</mark>: Mobile is a free-to-play shooter game developed <br> by TiMi Studio Group and published by Activision for Android <br>and iOS. It was released on October 1, 2019, where it was one <br> of the largest mobile game launches in history, generating over <br> US$ 480 million with 270 million downloads within a year.</pre>
+        </div>
+        <div class="kuu">
+            <h1>Why GamersZone</h1>
+            <div class="about">
+                <div class="security">
+                <img src="{% static "shield-halved-solid.svg" %}" alt="image">
+                <p>All the sensitive details are encrypted for data transmission. Like your password, payment information, etc.</p>
+                </div>
+                <div class="fast">
+                <img src="{% static "gauge-solid.svg"  %}" alt="image">
+                <p>Gamerzpocket built using latest technology, and taking a special care for its performance so user never hesitate for its performance.</p>
+                </div>
+                <div class="money">
+                <img src="{% static "sack-dollar-solid.svg" %}" alt="image">
+                <p>There is no points system or token or score or something else. people directly can earn a real money with NS e-Sports app.</p>
+               </div>
+        </div>
+        <script>
+            let home = document.getElementById('landbtn')
+            home.onclick = () => {
+                location.href = 'home';
+            }
+        </script>
+</body>
+</html>

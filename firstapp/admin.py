@@ -1,6 +1,6 @@
 from django.contrib import admin
 #from firstapp.models import account
-from firstapp.models import solofftournament, freefiredata
+from firstapp.models import solofftournament, freefiredata, pubggdata, coddata, duofftournament, squadfftournament
 
 
 # Register your models here.
@@ -12,5 +12,19 @@ class tournament(admin.ModelAdmin):
     list_display = ('tittle','totalplayer','prize','time')
 admin.site.register(solofftournament ,tournament)
 
+class tournament(admin.ModelAdmin):
+    list_display = ('tittle','totalplayer','prize','time')
+admin.site.register(duofftournament ,tournament)
+
+class tournament(admin.ModelAdmin):
+    list_display = ('tittle','totalplayer','prize','time')
+admin.site.register(squadfftournament ,tournament)
+
 class ffdata(admin.ModelAdmin):
     admin.site.register(freefiredata)
+
+class pubdata(admin.ModelAdmin):
+    admin.site.register(pubggdata)
+
+class coddata(admin.ModelAdmin):
+    admin.site.register(coddata)

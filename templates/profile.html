@@ -1,6 +1,6 @@
 {%include "header.html"%}
 {%load static%}
-<link rel="stylesheet" href="{%static "profileeeee.css" %}">
+<link rel="stylesheet" href="{%static "uprofile.css" %}">
     <div class="profile">
         {%if request.user.is_authenticated%}
         <h1>UserName</h1>
@@ -15,47 +15,48 @@
         </div>
         </form>
         <button  class="ffbtn" id="ffbtn">FreeFire</button>
-        <div class="freefirename" id="freefirename">
+        <div class="freefirename" id="freefirename" >
             <form action="ffdata" method="POST">
             {%csrf_token%}
-            <input type="text" placeholder="Enter Your FreeFire InGame Name" class="ingamename" name="ffname" required>
+            <input type="text" placeholder="Enter Your FreeFire InGame Name" class="ingamename" name="fname" required>
             <input type="text" placeholder="FreeFire InGame IdNumber" class="ingamenumber" name="ffid" required>
             <button type="submit" class="ffvalue" id="ffvalue">Submit</button>
             </form>
         </div>
         <button class="pubgbtn" id="pubgbtn">PUBG</button>
         <div class="pubgname" id="pubgname">
-            <input type="text" placeholder="Enter Your PUBG InGame Name" class="pubggamename">
-            <input type="text" placeholder="Enter Your PUBG InGame Id Number" class="pubgid">
+            <form action="pubgdata" method="POST">
+            {%csrf_token%}
+            <input type="text" placeholder="Enter Your PUBG InGame Name" class="pubggamename" name="pubgname">
+            <input type="text" placeholder="Enter Your PUBG InGame Id Number" class="pubgid" id="pubgid" name="pubgid">
             <button type="submit" class="pubgvalue">Submit</button>
+            </form>
         </div>
         <button type="submit" class="codbtn" id="codbtn">Call Of Duty</button>
         <div class="codname" id="codname">
-            <input type="text" placeholder="Enter Your COD InGame Name" class="codgamename">
-            <input type="text" placeholder="Enter Your COD InGame Id Number" class="codgameid">
+            <form action="coddata" method="POST">
+            {%csrf_token%}
+            <input type="text" placeholder="Enter Your COD InGame Name" class="codgamename" name="codname">
+            <input type="text" placeholder="Enter Your COD InGame Id Number" class="codgameid" name="codid">
             <button type="submit" class="codvalue">Submit</button>
+            </form>
         </div>
-        <div class="ffdata">
-            <h1>Your Freefire Data</h1>
-            <h2 class="yourname">Your FreeFire GameName</h2>
-            <h3>{{user.ffname}}</h3>
-            <h2 class="yourid">Your FreeFire GameId</h2>
-            <h3>{{user.ffid}}</h3>
-        </div>
-        <div class="pubgdata">
-            <h1>Your PUBG Data</h1>
-            <h2>Your PUBG GameName</h2>
-            <h3>@@@@@</h3>
-            <h2>Your PUBG GameId</h2>
-            <h3>0000</h3>
-        </div>
-        <div class="coddata">
-            <h1>Your COD Data</h1>
-            <h2>Your COD GameName</h2>
-            <h3>@@@@@</h3>
-            <h2>Your COD GameId</h2>
-            <h3>0000</h3>
-        </div>
+        <!--<section class="gamedata">
+            {%for ff in freefire%}
+            <div class="freefiredata">
+                <h2>Your Freefire InGameName</h2>
+                <h3>{{ff.ffid}}</h3>
+            </div>
+            {%endfor%}
+            <div class="pubgdata">
+                <h2>Your pubg InGameName</h2>
+                <h3>abc</h3>
+            </div>
+            <div class="coddata">
+                <h2>Your cod InGameName</h2>
+                <h3>abc</h3>
+            </div>
+        </section>-->
         <script>
             let ffbtn = document.getElementById("ffbtn")
             let ffsection = document.getElementById("freefirename");

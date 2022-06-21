@@ -36,7 +36,7 @@
 }
 .buttonbtn{
     position: absolute;
-    top:83vh;
+    top:170vh;
     left:10vw;
     height: 7vh;
     width: 12vw;
@@ -117,35 +117,6 @@
     color: white;
     border-radius: 5px;
 }
-.ffdata h1{
-    position: absolute;
-    left:5vw;
-    top:0vh;
-}
-.ffdata{
-    height: 80vh;
-    width:30vw;
-    position: absolute;
-    top:110vh;
-    left:5vw;
-}
-.ffdata h2{
-    position:relative;
-    top:5vh;
-    left:0vw;
-    width:25vw;
-    font-family: karma;
-    margin:80px;
-}
-.ffdata h3{
-    position:relative;
-    top:0vh;
-    left:0vw;
-    width:20vw;
-    font-family: karma;
-    margin:80px;
-    border-bottom: 2px solid #32C7FF;
-}
 .pubgbtn{
     position: absolute;
     top:25vh;
@@ -213,35 +184,6 @@
     background-color: black;
     color: white;
     border-radius: 5px;
-}
-.pubgdata{
-    height: 80vh;
-    width:30vw;
-    position: absolute;
-    top:110vh;
-    left:35vw;
-}
-.pubgdata h1{
-    position: absolute;
-    left:5vw;
-    top:0vh;
-}
-.pubgdata h2{
-    position:relative;
-    top:5vh;
-    left:0vw;
-    width:20vw;
-    font-family: karma;
-    margin:80px;
-}
-.pubgdata h3{
-    position:relative;
-    top:0vh;
-    left:0vw;
-    width:20vw;
-    font-family: karma;
-    margin:80px;
-    border-bottom: 2px solid #32C7FF;
 }
 .codbtn{
     position: absolute;
@@ -311,35 +253,56 @@
     color: white;
     border-radius: 5px;
 }
-.coddata{
-    height: 80vh;
-    width:30vw;
+.gamedata{
+    width:25vw;
+    height: 90vh;
     position: absolute;
-    top:110vh;
-    left:67vw;
+    top:80vh;
+    left:10vw;
 }
-.coddata h1{
+.freefiredata h2{
     position: absolute;
-    top:0vh;
-    left:5vw
+    top:5vh;
+    font-size: 2vw;
+    font-family: karma;
+}
+.freefiredata h3{
+    position: absolute;
+    top:15vh;
+    font-size: 1.5vw;
+    font-family: karma;
+    border-bottom: 2px solid #32C7FF;
+    width: 15vw;
+}
+.pubgdata h2{
+    position: absolute;
+    top:35vh;
+    font-size: 2vw;
+    font-family: karma;
+}
+.pubgdata h3{
+    position: absolute;
+    top:45vh;
+    font-size: 1.5vw;
+    font-family: karma;
+    border-bottom: 2px solid #32C7FF;
+    width: 15vw;
 }
 .coddata h2{
-    position:relative;
-    top:5vh;
-    left:0vw;
-    width:19vw;
+    position: absolute;
+    top:65vh;
+    font-size: 2vw;
     font-family: karma;
-    margin:80px;
 }
 .coddata h3{
-    position:relative;
-    top:0vh;
-    left:0vw;
-    width:20vw;
+    position: absolute;
+    top:75vh;
+    font-size: 1.5vw;
     font-family: karma;
-    margin:80px;
     border-bottom: 2px solid #32C7FF;
+    width: 15vw;
 }
+
 @media only screen and (min-width:200px) and (max-width:500px){
     .profile h1{
         position: absolute;
@@ -411,7 +374,7 @@
         top:110vh;
         left:35vw;
         height: 55vh;
-        width: 50vw;
+        width: 90vw;
     }
     .ingamename{
         position: absolute;
@@ -442,7 +405,7 @@
     .ffvalue{
         position: absolute;
         top: 42vh;
-        left: 4vw;
+        left: 16vw;
         height: 5vh;
         width: 25vw;
         font-family: karma;
@@ -456,41 +419,10 @@
         color: white;
         border-radius: 5px;
     }
-    .ffdata{
-        height: 80vh;
-        width: 99vw;
-        position: absolute;
-        top: 170vh;
-        left: 0vw;
-    }
-    .ffdata h1{
-        position: absolute;
-        top:0vh;
-        left:5vw;
-    }
-    .ffdata h2{
-        position:relative;
-        top:5vh;
-        left:0vw;
-        width:70vw;
-        font-family: karma;
-        margin:80px;
-        font-size: 6vw;
-    }
-    .ffdata h3{
-        position:relative;
-        top:0vh;
-        left:0vw;
-        width:50vw;
-        font-family: karma;
-        margin:80px;
-        border-bottom: 2px solid #32C7FF;
-        font-size: 5vw;
-    }
     .codbtn{
         position: absolute;
         top: 100vh;
-        left: 70vw;
+        left: 93vw;
         height: 5vh;
         width: 28vw;
         font-family: karma;
@@ -509,7 +441,7 @@
         top:110vh;
         left:35vw;
         height: 55vh;
-        width: 50vw;
+        width: 90vw;
     }
     .codgamename{
         position: absolute;
@@ -540,7 +472,7 @@
     .codvalue{
         position: absolute;
         top: 42vh;
-        left: 4vw;
+        left: 16vw;
         height: 5vh;
         width: 25vw;
         font-family: karma;
@@ -554,41 +486,11 @@
         color: white;
         border-radius: 5px;
     }
-    .coddata{
-        height: 80vh;
-        width: 99vw;
-        position: absolute;
-        top: 228vh;
-        left: 0vw;
-    }
-    .coddata h1{
-        position: absolute;
-        top:0vh;
-        left:5vw;
-    }
-    .coddata h2{
-        position:relative;
-        top:5vh;
-        left:0vw;
-        width:70vw;
-        font-family: karma;
-        margin:80px;
-        font-size: 6vw;
-    }
-    .coddata h3{
-        position:relative;
-        top:0vh;
-        left:0vw;
-        width:50vw;
-        font-family: karma;
-        margin:80px;
-        border-bottom: 2px solid #32C7FF;
-        font-size: 5vw;
-    }
+    
     .pubgbtn{
         position: absolute;
         top:100vh;
-        left:36vw;
+        left:47vw;
         height: 5vh;
         width: 28vw;
         font-family: karma; 
@@ -607,7 +509,7 @@
         top:110vh;
         left:35vw;
         height: 55vh;
-        width: 50vw;
+        width: 90vw;
     }
     .pubggamename{
         position: absolute;
@@ -638,7 +540,7 @@
     .pubgvalue{
         position: absolute;
         top: 42vh;
-        left: 4vw;
+        left: 16vw;
         height: 5vh;
         width: 25vw;
         font-family: karma;
@@ -652,36 +554,58 @@
         color: white;
         border-radius: 5px;
     }
-    .pubgdata{
-        height: 80vh;
-        width: 99vw;
+    .gamedata{
+        width:25vw;
+        height: 90vh;
         position: absolute;
-        top: 286vh;
-        left: 0vw;
+        top:170vh;
+        left:10vw;
     }
-    .pubgdata h1{
+    .freefiredata h2{
         position: absolute;
-        left:5vw;
-        top:0vh;
+        top:5vh;
+        font-size: 22px;
+        font-family: karma;
+        width:100vw;
+    }
+    .freefiredata h3{
+        position: absolute;
+        top:12vh;
+        font-size: 17px;
+        font-family: karma;
+        border-bottom: 2px solid #32C7FF;
+        width: 15vw;
     }
     .pubgdata h2{
-        position:relative;
-        top:5vh;
-        left:0vw;
-        width:70vw;
+        position: absolute;
+        top:35vh;
+        font-size: 22px;
         font-family: karma;
-        margin:80px;
-        font-size: 6vw;
+        width:100vw;
     }
     .pubgdata h3{
-        position:relative;
-        top:0vh;
-        left:0vw;
-        width:50vw;
+        position: absolute;
+        top:42vh;
+        font-size: 17px;
         font-family: karma;
-        margin:80px;
         border-bottom: 2px solid #32C7FF;
-        font-size: 5vw;
+        width: 15vw;
+    }
+    .coddata h2{
+        position: absolute;
+        top:65vh;
+        font-size: 22px;
+        font-family: karma;
+        width:99vw;
+
+    }
+    .coddata h3{
+        position: absolute;
+        top:72vh;
+        font-size: 17px;
+        font-family: karma;
+        border-bottom: 2px solid #32C7FF;
+        width: 15vw;
     }
 }
 
@@ -801,13 +725,6 @@
         color: white;
         border-radius: 5px;
     }
-    .ffdata{
-        height: 50vh;
-        width: 30vw;
-        position: absolute;
-        top: 170vh;
-        left: 70vw;
-    }
     .codbtn{
         position: absolute;
         top: 100vh;
@@ -874,13 +791,6 @@
         background-color: black;
         color: white;
         border-radius: 5px;
-    }
-    .coddata{
-        height: 50vh;
-        width: 30vw;
-        position: absolute;
-        top: 170vh;
-        left: 35vw;
     }
     .pubgbtn{
         position: absolute;
@@ -949,12 +859,58 @@
         color: white;
         border-radius: 5px;
     }
-    .pubgdata{
-        height: 50vh;
-        width: 30vw;
+    .gamedata{
+        width:25vw;
+        height: 90vh;
         position: absolute;
-        top: 170vh;
-        left: 5vw;
+        top:170vh;
+        left:10vw;
+    }
+    .freefiredata h2{
+        position: absolute;
+        top:5vh;
+        font-size: 42px;
+        font-family: karma;
+        width:100vw;
+    }
+    .freefiredata h3{
+        position: absolute;
+        top:12vh;
+        font-size: 33px;
+        font-family: karma;
+        border-bottom: 2px solid #32C7FF;
+        width: 25vw;
+    }
+    .pubgdata h2{
+        position: absolute;
+        top:35vh;
+        font-size: 42px;
+        font-family: karma;
+        width:100vw;
+    }
+    .pubgdata h3{
+        position: absolute;
+        top:42vh;
+        font-size: 33px;
+        font-family: karma;
+        border-bottom: 2px solid #32C7FF;
+        width: 25vw;
+    }
+    .coddata h2{
+        position: absolute;
+        top:65vh;
+        font-size: 42px;
+        font-family: karma;
+        width:99vw;
+
+    }
+    .coddata h3{
+        position: absolute;
+        top:72vh;
+        font-size: 33px;
+        font-family: karma;
+        border-bottom: 2px solid #32C7FF;
+        width: 25vw;
     }
 }
 @media only screen and (min-width:1000px) and (max-width:1500px){
@@ -1006,163 +962,59 @@
         background-color: black;
         color: white;
     }
-    .pubgdata{
-        height: 80vh;
-        width:30vw;
+    .gamedata{
+        width:25vw;
+        height: 90vh;
         position: absolute;
-        top:110vh;
-        left:35vw;
+        top:100vh;
+        left:0vw;
     }
-    .pubgdata h1{
+    .freefiredata h2{
         position: absolute;
-        left:5vw;
-        top:1vh;
+        top:5vh;
+        font-size: 32px;
+        font-family: karma;
+        width:40vw;
+    }
+    .freefiredata h3{
+        position: absolute;
+        top:13vh;
+        font-size: 23px;
+        font-family: karma;
+        border-bottom: 2px solid #32C7FF;
+        width: 20vw;
     }
     .pubgdata h2{
-        position:relative;
-        top:5vh;
-        left:0vw;
-        width:20vw;
+        position: absolute;
+        top:35vh;
+        font-size: 32px;
         font-family: karma;
-        margin:80px;
+        width:40vw;
     }
     .pubgdata h3{
-        position:relative;
-        top:0vh;
-        left:0vw;
-        width:20vw;
+        position: absolute;
+        top:43vh;
+        font-size: 23px;
         font-family: karma;
-        margin:80px;
         border-bottom: 2px solid #32C7FF;
-    }
-    .ffdata{
-        height: 80vh;
-        width:30vw;
-        position: absolute;
-        top:110vh;
-        left:5vw;
-    }
-    .ffdata h1{
-        position: absolute;
-        left:5vw;
-        top:0vh;
-    }
-    .ffdata h2{
-        position:relative;
-        top:5vh;
-        left:0vw;
-        width:23vw;
-        font-family: karma;
-        margin:80px;
-    }
-    .ffdata h3{
-        position:relative;
-        top:0vh;
-        left:0vw;
-        width:20vw;
-        font-family: karma;
-        margin:80px;
-        border-bottom: 2px solid #32C7FF;
-    }
-    .coddata{
-        height: 80vh;
-        width:30vw;
-        position: absolute;
-        top:110vh;
-        left:67vw;
-    }
-    .coddata h1{
-        position: absolute;
-        top:0vh;
-        left:5vw
+        width: 20vw;
     }
     .coddata h2{
-        position:relative;
-        top:5vh;
-        left:0vw;
-        width:19vw;
+        position: absolute;
+        top:65vh;
+        font-size: 32px;
         font-family: karma;
-        margin:80px;
+        width:40vw;
+
     }
     .coddata h3{
-        position:relative;
-        top:0vh;
-        left:0vw;
-        width:20vw;
+        position: absolute;
+        top:73vh;
+        font-size: 23px;
         font-family: karma;
-        margin:80px;
         border-bottom: 2px solid #32C7FF;
+        width: 20vw;
     }
-}
-@media only screen and (max-width:280px) and (max-height:653px){
-    .ffdata{
-        height: 50vh;
-        width: 100vw;
-        position: absolute;
-        top: 170vh;
-        left: 0vw;
-    }
-    .coddata{
-        height: 50vh;
-        width: 100vw;
-        position: absolute;
-        top: 250vh;
-        left: 0vw;
-    }
-    .pubgdata{
-        height: 50vh;
-        width: 100vw;
-        position: absolute;
-        top: 335vh;
-        left: 0vw;
-    }
-}
-@media only screen and (max-width:320px) and (max-height:658px){
-    .ffdata{
-        height: 50vh;
-        width: 100vw;
-        position: absolute;
-        top: 170vh;
-        left: 0vw;
-    }
-    .coddata{
-        height: 50vh;
-        width: 100vw;
-        position: absolute;
-        top: 250vh;
-        left: 0vw;
-    }
-    .pubgdata{
-        height: 50vh;
-        width: 100vw;
-        position: absolute;
-        top: 335vh;
-        left: 0vw;
-    }
-}
-@media only screen and (max-width:376px) and (max-height:668px){
-    .ffdata{
-        height: 50vh;
-        width: 100vw;
-        position: absolute;
-        top: 170vh;
-        left: 0vw;
-    }
-    .coddata{
-        height: 50vh;
-        width: 100vw;
-        position: absolute;
-        top: 245vh;
-        left: 0vw;
-    }
-    .pubgdata{
-        height: 50vh;
-        width: 100vw;
-        position: absolute;
-        top: 320vh;
-        left: 0vw;
-    }
-    
 }
 @media only screen and (min-width:200px) and (max-width:1000px) {
     .footer{
@@ -1170,7 +1022,7 @@
         height: 50vh;
         background-color: rgba(151, 149, 149, 1);
         position: absolute;
-        top: 390vh;
+        top: 170vh;
         }
     }
     @media only screen and (min-width:1000px) and (max-width:2000px) {
@@ -1179,6 +1031,6 @@
             height: 50vh;
             background-color: rgba(151, 149, 149, 1);
             position: absolute;
-            top: 220vh;
+            top: 190vh;
             }
         }

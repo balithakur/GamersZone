@@ -3,7 +3,8 @@ from django.urls import path
 from firstapp import views
 
 urlpatterns = [
-    path("", views.home, name='home'),
+    path("", views.landingpage, name='landpage'),
+    path("home", views.home, name='home'),
     path("createaccount", views.signup, name='signup'),
     path("thankyoupage", views.thank, name='thankyou'),
     path("tournamentpage", views.tournament, name='tournament'),
@@ -12,4 +13,6 @@ urlpatterns = [
     path("profile", views.profile, name='profile'),
     path("contact", views.contact, name='contact'), 
     path("ffdata", views.ffdata, name='ffdata'),
+    path("pubgdata", views.pubgdata, name='pubgdata'),
+    path("coddata", views.callofdutydata, name='coddata'),
 ]
