@@ -418,24 +418,24 @@
 }
 @media only screen and (min-width:600px) and (max-height:400px) {
     .herosection pre {
-        font-size: 7vw;
+        font-size: 6vw;
         font-family: karma;
         font-weight: 500;
         position: absolute;
         left: 13vw;
-        top: 11vh;
+        top: 31vh;
     }
     .herosection p {
         position: absolute;
-        top: 70vh;
+        top: 115vh;
         left: 6vw;
         font-size: 3vw;
         font-family: karma;
     }
     .herosection button {
         position: absolute;
-        left: 35vw;
-        top: 100vh;
+        left: 42vw;
+        top: 160vh;
         background-color: #32C7FF;
         font-size: 2vw;
         justify-content: center;
@@ -448,16 +448,16 @@
         z-index: auto;
     }
     .herosection {
-        height: 227vh;
-        width: 100%;
+        height: 330vh;
+        width: 100vw;
         background-image: linear-gradient(180deg, #14CAF2 0%, rgba(59, 157, 240, 0.57) 99.54%, rgba(11, 250, 221, 0.26) 100%);
     }
     .herosection img {
-        height: 107vh;
+        height: 130vh;
         width: 107vw;
         position: absolute;
         left: -9vw;
-        top: 120vh;
+        top: 200vh;
     }
     .content {
         height: 150vh;
@@ -514,21 +514,138 @@
         font-family: karma;
         border: 1px solid black;
     }
-    .footer {
+}
+@media only screen and (min-width:400px) and (max-height:400px){
+    .herosection pre {
+        font-size: 8vw;
+        font-family: karma;
+        font-weight: 500;
+        position: absolute;
+        left: 13vw;
+        top: 31vh;
+    }
+    .herosection p {
+        position: absolute;
+        top: 105vh;
+        left: 6vw;
+        font-size: 4vw;
+        font-family: karma;
+    }
+    .herosection button {
+        position: absolute;
+        left: 33vw;
+        top: 145vh;
+        background-color: #32C7FF;
+        font-size: 3vw;
+        justify-content: center;
+        align-content: center;
+        padding: 10px 24px;
+        border-radius: 10px;
+        border: 2px #13A7FB;
+        font-family: karma;
+        border: 1px solid black;
+        z-index: auto;
+    }
+    .herosection img {
+        height: 152vh;
+        width: 107vw;
+        position: absolute;
+        left: -9vw;
+        top: 178vh;
+    }
+    .herosection {
+        height: 330vh;
+        width: 100vw;
+        background-image: linear-gradient(180deg, #14CAF2 0%, rgba(59, 157, 240, 0.57) 99.54%, rgba(11, 250, 221, 0.26) 100%);
+    }
+    .herosection img {
+        height: 130vh;
+        width: 107vw;
+        position: absolute;
+        left: -9vw;
+        top: 200vh;
+    }
+    .content {
+        height: 150vh;
+        position: relative;
+        top: -125vh;
+    }
+    .content h2 {
+        position: absolute;
+        left: 22vw;
+        top: 147vh;
+        font-size: 5vw;
+        font-family: karma;
+    }
+    .star1 {
+        height: 21px;
+        width: 21px;
+        position: absolute;
+        left: 10vw;
+        top: 185vh;
+        transform: rotate(93deg);
+    }
+    .contentfirstp {
+        font-size: 3vw;
+        font-family: karma;
+        position: absolute;
+        left: 25vw;
+        top: 185vh;
+    }
+    .star2 {
+        height: 21px;
+        width: 21px;
+        position: absolute;
+        left: 10vw;
+        top: 210vh;
+        transform: rotate(193deg);
+    }
+    .contentsecondp {
+        font-size: 3vw;
+        font-family: karma;
+        position: absolute;
+        left: 25vw;
+        top: 209vh;
+    }
+    .content button {
+        position: absolute;
+        top: 240vh;
+        left: 40vw;
+        background-image: linear-gradient(180deg, #13A7FB 0%, rgba(62, 219, 254, 0.26) 100%);
+        font-size: 2vw;
+        justify-content: center;
+        padding: 10px 24px;
+        border-radius: 10px;
+        border: 2px #13A7FB;
+        font-family: karma;
+        border: 1px solid black;
+    }
+}
+@media only screen and (min-width:200px) and (max-width:1000px) {
+    .footer{
         width: 100%;
         height: 50vh;
         background-color: rgba(151, 149, 149, 1);
         position: absolute;
-        top: 375vh;
+        top: 220vh;
+        }
     }
+@media only screen and (min-width:1000px) and (max-width:2000px) {
+    .footer{
+        width: 100%;
+        height: 50vh;
+        background-color: rgba(151, 149, 149, 1);
+        position: absolute;
+        top: 190vh;
+        }
 }
-
-.footer{
-    width: 100%;
-    height: 50vh;
-    background-color: rgba(151, 149, 149, 1);
-    position: absolute;
-    top: 215vh;
-}
-
-
+@media only screen and (min-width:400px) and (max-height:400px) {
+    .footer{
+        width: 100%;
+        height: 50vh;
+        background-color: rgba(151, 149, 149, 1);
+        position: absolute;
+        top: 490vh;
+        }
+    }
+    
