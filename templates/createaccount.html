@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GamersZone/createaccount</title>
-    <link rel="stylesheet" href="{% static 'createaccountttt.css'%}">
+    <link rel="stylesheet" href="{% static 'ttt.css'%}">
 </head>
 </head>
 <body>
@@ -22,15 +22,7 @@
         provides you fast withdrwal your money to you <br> wallet aur your account.
         </p>
     </div>
-    <form action="logindiv" method="POST">
-    <div class="logindiv">
-        {% for message in messages %}
-        <div class="alert alert-{{ message.tags }}" role="alert">
-            <strong>Message</strong> {{message}}
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-        {% endfor %}
-       
+        <div class="logindiv">
         <h1>Create Account</h1>
         <p><strong>Welcome </strong> Please fill the details and create your <strong> GamersZone Account </strong></p>
         <img src="{%static "user-solid.svg" %}" alt="userimage" class="user">
@@ -41,8 +33,6 @@
         <input type="text" placeholder="Enter Your Password" class="password1" name="pass1" required>
         <img src="{%static "key-solid.svg"%}" alt="keyimage" class="key2">
         <input type="text" placeholder="Confirm Password" class="password2" name="pass5" required>
-        <button type="submit">Submit</button>
+        <button type="submit" class="lsbtn">Submit</button>
     </div>
-    {% include "footer.html" %}
-</body>
-</html>
+{% include "footer.html" %}
