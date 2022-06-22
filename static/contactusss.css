@@ -520,12 +520,210 @@
         left:10px;
     }
 }
-.footer{
-    width: 100vw;
-    height: 50vh;
-    background-color: rgba(151, 149, 149, 1);
-    position: absolute;
-    top: 105vh;
+@media only screen and (max-width:600px) and (max-height:400px){
+    .sendmessage {
+        height: 150vh;
+        width: 90vw;
+        position: absolute;
+        top: 200vh;
+        left: 5vw;
+        box-shadow: 0 0 8px #32c7ff;
+        border-radius: 10px;
+        border: 1px solid #32C7FF;
+    }
+    .emailcontact {
+        height: 40vh;
+        width: 35vw;
+        position: absolute;
+        top: 150vh;
+        left: 32vw;
+        border: 1px solid #32C7FF;
+        box-shadow: 0 0 8px #32c7ff;
+    }
+    .sendmessage h1 {
+        font-size: 5vw;
+        font-family: karma;
+        position: absolute;
+        top: 20px;
+        left: 17vw;
+    }
+    .sendmessage img {
+        height: 6vh;
+        width: 6vw;
+        position: absolute;
+        top: 10.4vh;
+        left: 58vw;
+    }
+    .submit {
+        position: absolute;
+        top: 125vh;
+        left: 42vw;
+        height: 40px;
+        width: 80px;
+        font-size: 21px;
+        font-family: karma;
+        background-color: #32C7FF;
+        border: 2px solid #32C7FF;
+        border-radius: 10px;
+    }
+    .problem {
+        justify-content: center;
+        height: 18vh;
+        width: 52vw;
+        position: absolute;
+        text-align: center;
+        top: 92vh;
+        left: 19vw;
+        border: 1px solid black;
+        font-family: karma;
+        font-size: 3vw;
+    }
+    .subject {
+        height: 12vh;
+        width: 52vw;
+        position: absolute;
+        top: 70vh;
+        border: 1px solid black;
+        left: 19vw;
+        font-size: 3vw;
+        text-align: center;
+        font-family: karma;
+    }
+    .name {
+        height: 12vh;
+        width: 52vw;
+        position: absolute;
+        top: 48vh;
+        border: 1px solid black;
+        left: 19vw;
+        font-size: 3vw;
+        font-family: karma;
+        text-align: center;
+    }
+    .mail {
+        height: 12vh;
+        width: 52vw;
+        position: absolute;
+        top: 27vh;
+        font-size: 3vw;
+        border: 1px solid black;
+        left: 19vw;
+        text-align: center;
+        font-family: karma;
+    }
+    .contactus pre {
+        font-size: 6vw;
+        font-family: karma;
+        position: absolute;
+        top: 70vh;
+        left: 5vw;
+    }
+}
+@media only screen and (min-width:600px) and (max-height:400px){
+    .sendmessage {
+        height: 180vh;
+        width: 67vw;
+        position: absolute;
+        top: 225vh;
+        left: 16vw;
+        box-shadow: 0 0 8px #32c7ff;
+        border-radius: 10px;
+        border: 1px solid #32C7FF;
+    }
+    .emailcontact {
+        height: 40vh;
+        width: 35vw;
+        position: absolute;
+        top: 150vh;
+        left: 32vw;
+        border: 1px solid #32C7FF;
+        box-shadow: 0 0 8px #32c7ff;
+    }
+    .sendmessage h1 {
+        font-size: 4vw;
+        font-family: karma;
+        position: absolute;
+        top: 20px;
+        left: 12vw;
+    }
+    .sendmessage img {
+        height: 6vh;
+        width: 6vw;
+        position: absolute;
+        top: 11.4vh;
+        left: 44vw;
+    }
+    .submit {
+        position: absolute;
+        top: 145vh;
+        left: 28vw;
+        height: 40px;
+        width: 80px;
+        font-size: 21px;
+        font-family: karma;
+        background-color: #32C7FF;
+        border: 2px solid #32C7FF;
+        border-radius: 10px;
+    }
+    .problem {
+        justify-content: center;
+        height: 25vh;
+        width: 40vw;
+        position: absolute;
+        text-align: center;
+        top: 105vh;
+        left: 12vw;
+        border: 1px solid black;
+        font-family: karma;
+        font-size: 2vw;
+    }
+    .subject {
+        height: 12vh;
+        width: 40vw;
+        position: absolute;
+        top: 80vh;
+        border: 1px solid black;
+        left: 12vw;
+        font-size: 2vw;
+        text-align: center;
+        font-family: karma;
+    }
+    .name {
+        height: 12vh;
+        width: 40vw;
+        position: absolute;
+        top: 55vh;
+        border: 1px solid black;
+        left: 12vw;
+        font-size: 2vw;
+        font-family: karma;
+        text-align: center;
+    }
+    .mail {
+        height: 12vh;
+        width: 40vw;
+        position: absolute;
+        top: 30vh;
+        font-size: 2vw;
+        border: 1px solid black;
+        left: 12vw;
+        text-align: center;
+        font-family: karma;
+    }
+    .contactus pre {
+        font-size: 5vw;
+        font-family: karma;
+        position: absolute;
+        top: 80vh;
+        left: 5vw;
+    }
+    .contactus h1 {
+        font-size: 3vw;
+        font-family: karma;
+        position: absolute;
+        top: 55vh;
+        left: 17vw;
+    }
 }
 @media only screen and (min-width:200px) and (max-width:1000px) {
     .footer{
@@ -533,6 +731,24 @@
         height: 50vh;
         background-color: rgba(151, 149, 149, 1);
         position: absolute;
-        top: 180vh;
-        }
+        top: 165vh;
     }
+}
+@media only screen and (min-width:1000px) and (max-width:2000px){
+    .footer{
+        width: 100%;
+        height: 50vh;
+        background-color: rgba(151, 149, 149, 1);
+        position: absolute;
+        top: 110vh;
+    }
+}
+@media only screen and (min-width:400px) and (max-height:400px){
+    .footer{
+        width: 100vw;
+        height: 90vh;
+        background-color: rgba(151, 149, 149, 1);
+        position: absolute;
+        top: 430vh;
+    }
+}
