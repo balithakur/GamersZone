@@ -1,4 +1,3 @@
-
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.shortcuts import render 
@@ -6,11 +5,13 @@ from firstapp.models import freefiredata ,pubggdata ,coddata
 from  django.http import  HttpResponse ,HttpResponseRedirect
 from django.contrib.auth import authenticate , login , logout
 from firstapp.models import solofftournament, duofftournament, squadfftournament
-
-
 # Create your views here.
 def landingpage(request):
     return render(request, 'landpage.html')
+
+
+def payment(request):
+    return render (request, 'payment.html')
 
 
 def home(request):
@@ -32,13 +33,14 @@ def signup(request):
         try:
             #temp= account.objects.get(name=name)
             temp= User.objects.get(username=name)
+            return HttpResponse("username exists")
             messages.success(request, "username already exist")
         except Exception:
             pass
         try:
             #temp= account.objects.get(name=name)
-            temp= User.objects.get(mail=mail)
-            return HttpResponse("username already exist")
+            temp= User.objects.get(email=mail)
+            return HttpResponse("mail already exist")
         except Exception:
             pass 
         if pass1 != pass5:
@@ -76,7 +78,7 @@ def tournament(request):
         for fff in freefire:
             print(fff.ffid)
             if fff.ffid is not None:
-                return HttpResponse("hogya")
+                return HttpResponseRedirect('payment')
         else:
             return HttpResponseRedirect('profile')
     return render(request, 'tournamentpage.html',solodata)

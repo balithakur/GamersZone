@@ -15,4 +15,5 @@ urlpatterns = [
     path("ffdata", views.ffdata, name='ffdata'),
     path("pubgdata", views.pubgdata, name='pubgdata'),
     path("coddata", views.callofdutydata, name='coddata'),
+    path("payment", views.payment, name='payment'),
 ]

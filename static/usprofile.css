@@ -357,7 +357,7 @@
         top: 100vh;
         left: 2vw;
         height: 5vh;
-        width: 28vw;
+        width: 25vw;
         font-family: karma;
         font-size: 5vw;
         border: 1px solid black;
@@ -371,10 +371,10 @@
     }
     .freefirename{
         position: absolute;
-        top:110vh;
-        left:35vw;
+        top: 110vh;
+        left: 33vw;
         height: 55vh;
-        width: 90vw;
+        width: 3vw;
     }
     .ingamename{
         position: absolute;
@@ -405,7 +405,7 @@
     .ffvalue{
         position: absolute;
         top: 42vh;
-        left: 16vw;
+        left: 2vw;
         height: 5vh;
         width: 25vw;
         font-family: karma;
@@ -422,9 +422,9 @@
     .codbtn{
         position: absolute;
         top: 100vh;
-        left: 93vw;
+        left: 68vw;
         height: 5vh;
-        width: 28vw;
+        width: 30vw;
         font-family: karma;
         font-size: 5vw;
         border: 1px solid black;
@@ -438,10 +438,10 @@
     }
     .codname{
         position: absolute;
-        top:110vh;
-        left:35vw;
+        top: 110vh;
+        left: 35vw;
         height: 55vh;
-        width: 90vw;
+        width: 58vw;
     }
     .codgamename{
         position: absolute;
@@ -472,7 +472,7 @@
     .codvalue{
         position: absolute;
         top: 42vh;
-        left: 16vw;
+        left: 0vw;
         height: 5vh;
         width: 25vw;
         font-family: karma;
@@ -490,9 +490,9 @@
     .pubgbtn{
         position: absolute;
         top:100vh;
-        left:47vw;
+        left:35vw;
         height: 5vh;
-        width: 28vw;
+        width: 25vw;
         font-family: karma; 
         font-size: 5vw;
         border: 1px solid black;
@@ -506,10 +506,10 @@
     }
     .pubgname{
         position: absolute;
-        top:110vh;
-        left:35vw;
+        top: 110vh;
+        left: 35vw;
         height: 55vh;
-        width: 90vw;
+        width: 1vw;
     }
     .pubggamename{
         position: absolute;
@@ -540,7 +540,7 @@
     .pubgvalue{
         position: absolute;
         top: 42vh;
-        left: 16vw;
+        left: 0vw;
         height: 5vh;
         width: 25vw;
         font-family: karma;
