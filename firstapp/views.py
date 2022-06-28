@@ -5,13 +5,35 @@ from firstapp.models import freefiredata ,pubggdata ,coddata
 from  django.http import  HttpResponse ,HttpResponseRedirect
 from django.contrib.auth import authenticate , login , logout
 from firstapp.models import solofftournament, duofftournament, squadfftournament
+from paytm import checksum
+import random
+
+
+
+MERCHANT_KEY='FQvE9GodDFIW5vIT'
+
 # Create your views here.
 def landingpage(request):
     return render(request, 'landpage.html')
 
 
 def payment(request):
-    return render (request, 'payment.html')
+    if request.method=="POST":
+        param_dict = {
+
+                'MID': 'aRRQGx94100136444263',
+                'ORDER_ID': str(random.randint(9999,99999)),
+                'TXN_AMOUNT': str(10),
+                'CUST_ID' : "balisc04@gmail.com",
+                'INDUSTRY_TYPE_ID': 'Retail',
+                'WEBSITE': 'WEBSTAGING',
+                'CHANNEL_ID': 'WEB',
+                'CALLBACK_URL':'http://127.0.0.1:8000/handlerequest',
+
+        }
+        param_dict['CHECKSUMHASH'] = checksum.generate_checksum(param_dict, MERCHANT_KEY, )
+        return render(request, 'paytm.html', {'param_dict': param_dict})
+    return render(request, 'payment.html')
 
 
 def home(request):
