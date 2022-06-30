@@ -22,6 +22,13 @@
         provides you fast withdrwal your money to you <br> wallet aur your account.
         </p>
     </div>
+    {% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
         <div class="logindiv">
         <h1>Create Account</h1>
         <p><strong>Welcome </strong> Please fill the details and create your <strong> GamersZone Account </strong></p>

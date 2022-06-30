@@ -77,14 +77,15 @@ def signup(request):
         try:
             #temp= account.objects.get(name=name)
             temp= User.objects.get(username=name)
-            return HttpResponse("username exists")
-            messages.success(request, "username already exist")
+            #return HttpResponse("username exists")
+            messages.error(request, "username already exist")
         except Exception:
             pass
         try:
             #temp= account.objects.get(name=name)
             temp= User.objects.get(email=mail)
-            return HttpResponse("mail already exist")
+            messages.error(request, "mail already exist")
+            #return HttpResponse("mail already exist")
         except Exception:
             pass 
         if pass1 != pass5:
