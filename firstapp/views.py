@@ -5,7 +5,7 @@ from firstapp.models import freefiredata ,pubggdata ,coddata
 from  django.http import  HttpResponse ,HttpResponseRedirect
 from django.contrib.auth import authenticate , login , logout
 from firstapp.models import solofftournament, duofftournament, squadfftournament
-from paytm import Checksum
+from firstapp.paytm import Checksum
 import random
 from django.views.decorators.csrf import csrf_exempt
 
