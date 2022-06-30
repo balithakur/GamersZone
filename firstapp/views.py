@@ -5,12 +5,14 @@ from firstapp.models import freefiredata ,pubggdata ,coddata
 from  django.http import  HttpResponse ,HttpResponseRedirect
 from django.contrib.auth import authenticate , login , logout
 from firstapp.models import solofftournament, duofftournament, squadfftournament
-from paytm import checksum
+from paytm import Checksum
 import random
+from django.views.decorators.csrf import csrf_exempt
 
 
 
 MERCHANT_KEY='FQvE9GodDFIW5vIT'
+MERCHANT_ID='aRRQGx94100136444263'
 
 # Create your views here.
 def landingpage(request):
@@ -21,19 +23,39 @@ def payment(request):
     if request.method=="POST":
         param_dict = {
 
-                'MID': 'aRRQGx94100136444263',
+                'MID': MERCHANT_ID,
                 'ORDER_ID': str(random.randint(9999,99999)),
                 'TXN_AMOUNT': str(10),
                 'CUST_ID' : "balisc04@gmail.com",
                 'INDUSTRY_TYPE_ID': 'Retail',
                 'WEBSITE': 'WEBSTAGING',
                 'CHANNEL_ID': 'WEB',
-                'CALLBACK_URL':'http://127.0.0.1:8000/handlerequest',
+                'CALLBACK_URL':'http://127.0.0.1:8000/order',
 
         }
-        param_dict['CHECKSUMHASH'] = checksum.generate_checksum(param_dict, MERCHANT_KEY, )
+        param_dict['CHECKSUMHASH'] = Checksum.generate_checksum(param_dict, MERCHANT_KEY, )
         return render(request, 'paytm.html', {'param_dict': param_dict})
     return render(request, 'payment.html')
+
+
+@csrf_exempt
+def handlerequest(request):
+    # paytm will send you post request here
+    form = request.POST
+    response_dict = {}
+    for i in form.keys():
+        response_dict[i] = form[i]
+        if i == 'CHECKSUMHASH':
+            checksum = form[i]
+
+    verify = Checksum.verify_checksum(response_dict, MERCHANT_KEY, checksum)
+    if verify:
+        if response_dict['RESPCODE'] == '01':
+          #  return HttpResponseRedirect('order')
+            print('order successful')
+        else:
+            print('order was not successful because' + response_dict['RESPMSG'])
+    return render(request, 'order.html', {'response': response_dict})
 
 
 def home(request):

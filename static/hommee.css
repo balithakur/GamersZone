@@ -214,7 +214,7 @@
 }
 @media only screen and (min-width:500px) and (max-width:1000px) {
     .herosection{
-        height: 140vh;
+        height: 129vh;
         width: 100%;
         background-image: linear-gradient(180deg, #14CAF2 0%, rgba(59, 157, 240, 0.57) 99.54%, rgba(11, 250, 221, 0.26) 100%);
     }
@@ -231,11 +231,11 @@
         width: 107vw;
         position: absolute;
         left: -8vw;
-        top: 81vh;
+        top: 70vh;
     }
     .herosection p{
         position: absolute;
-        top: 55vh;
+        top: 45vh;
         left: 5vw;
         font-size: 4vw;
         font-family: karma;
@@ -243,7 +243,7 @@
     .herosection button{
         position: absolute;
         left: 35vw;
-        top: 70vh;
+        top: 60vh;
         background-color: #32C7FF;
         font-size: 3vw;
         justify-content: center;
@@ -266,8 +266,8 @@
     }
     .content h2{
         position: absolute;
-        left: 10vw;
-        top: 147vh;
+        left: 6vw;
+        top: 135vh;
         font-size: 8vw;
         font-family: karma;
     }
@@ -276,7 +276,7 @@
         width: 32px;
         position: absolute;
         left: 10vw;
-        top: 160vh;
+        top: 150vh;
         transform: rotate(93deg);
     }
     .contentfirstp{
@@ -284,14 +284,14 @@
         font-family: karma;
         position: absolute;
         left: 25vw;
-        top: 160vh;
+        top: 150vh;
     }
     .star2{
         height: 32px;
         width: 32px;
         position: absolute;
         left: 10vw;
-        top: 180vh;
+        top: 170vh;
         transform: rotate(193deg);
     }
     .contentsecondp{
@@ -299,11 +299,11 @@
         font-family: karma;
         position: absolute;
         left: 25vw;
-        top: 180vh;
+        top: 170vh;
     }
     .content button{
         position: absolute;
-        top: 200vh;
+        top: 190vh;
         left: 35vw;
         background-image: linear-gradient(180deg, #13A7FB 0%, rgba(62, 219, 254, 0.26) 100%);
         font-size: 3vw;

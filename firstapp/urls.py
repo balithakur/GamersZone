@@ -16,4 +16,5 @@ urlpatterns = [
     path("pubgdata", views.pubgdata, name='pubgdata'),
     path("coddata", views.callofdutydata, name='coddata'),
     path("payment", views.payment, name='payment'),
+    path("order", views.handlerequest, name='order'),
 ]
