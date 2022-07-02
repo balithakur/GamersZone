@@ -1,3 +1,4 @@
+
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.shortcuts import render 
@@ -75,29 +76,31 @@ def signup(request):
         #    if mail != usermail:
         #        messages.error(request, "email already exist")
         try:
-            #temp= account.objects.get(name=name)
-            temp= User.objects.get(username=name)
-            #return HttpResponse("username exists")
-            messages.error(request, "username already exist")
+            temp= User.objects.get(username = name)
+            return HttpResponseRedirect('createaccount', messages.error(request, "username already exist"))  
         except Exception:
             pass
-        try:
-            #temp= account.objects.get(name=name)
-            temp= User.objects.get(email=mail)
-            messages.error(request, "mail already exist")
-            #return HttpResponse("mail already exist")
-        except Exception:
-            pass 
-        if pass1 != pass5:
-            messages.error(request, 'password does not match')
+        #try:
+        #    temp= User.objects.get(email = mail)
+        #    messages.error(request, "mail already exist")
+        #except Exception:
+        #    pass 
+        
+        userlogin=User.objects.all()
+        for indata in userlogin:
+            pass
+            #print("yes")
+        if indata.email == mail : 
+            messages.error(request, 'mail already exists')
         else:
-            print(name ,mail ,pass5 )
-            #createuseraccount.save()
-            user=User.objects.create_user(name, mail , pass5,)
-            user.save()
-            return HttpResponseRedirect('thankyoupage') 
+            if pass1 != pass5 : 
+                messages.error(request, 'password does not match')
+            else:
+                user=User.objects.create_user(name, mail , pass5,)
+                user.save()
+                return HttpResponseRedirect('thankyoupage') 
     return render(request, 'createaccount.html' )
-
+   
    
 def thank(request):
     return render(request, 'thankyoupage.html')

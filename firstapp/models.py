@@ -27,7 +27,7 @@ class squadfftournament(models.Model):
 
 
 class freefiredata(models.Model):
-    #user=models.OneToOneField(User, on_delete=models.CASCADE ,primary_key=True)
+    #user=models.ForeignKey(User, on_delete=models.CASCADE ,primary_key=True)
     ffname=models.CharField(max_length=30)
     ffid=models.CharField(max_length=30)
 
@@ -40,3 +40,5 @@ class coddata(models.Model):
     #user=models.OneToOneField(User, on_delete=models.CASCADE ,primary_key=True)
     codname=models.CharField(max_length=30)
     codid=models.CharField(max_length=30)
+
+

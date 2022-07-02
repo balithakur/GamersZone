@@ -17,12 +17,8 @@
         </ul>
         <form action="payment" method="POST">
             {%csrf_token%}
-            <button id="submit">Join Tournament</button>
-        </form>
-        {% if response.RESPCODE == '01' %}
-        <button style="visibility:hidden">Join Tournament</button>
-        <h1> if works<h1>
-        {%endif%}
+            <button id="submit" >Join Tournament</button>
+        </form> 
     </div>
     <div class="jointournament">
         <button>Joined Player</button>
