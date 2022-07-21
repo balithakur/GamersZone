@@ -1,6 +1,7 @@
 from operator import truediv
 from django.db import models
 from django.contrib.auth.models import User
+from django.forms import BaseModelForm
 # Create your models here.
 #class account(models.Model):    
 #    name=models.CharField(unique=True, max_length=30)
@@ -27,7 +28,7 @@ class squadfftournament(models.Model):
 
 
 class freefiredata(models.Model):
-    #user=models.ForeignKey(User, on_delete=models.CASCADE ,primary_key=True)
+    #user=models.OneToOneField(User, on_delete=models.CASCADE ,primary_key=True,)
     ffname=models.CharField(max_length=30)
     ffid=models.CharField(max_length=30)
 
@@ -41,4 +42,8 @@ class coddata(models.Model):
     codname=models.CharField(max_length=30)
     codid=models.CharField(max_length=30)
 
-
+class paymentdata(models.Model):
+    user=models.OneToOneField(User, on_delete=models.CASCADE ,primary_key=True)
+    status=models.CharField(max_length=30)
+    orderid=models.IntegerField()
+    date=models.IntegerField()

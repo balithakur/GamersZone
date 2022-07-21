@@ -19,8 +19,8 @@
             <form action="ffdata" method="POST">
             {%csrf_token%}
             <input type="text" placeholder="Enter Your FreeFire InGame Name" class="ingamename" name="fname" required>
-            <input type="text" placeholder="FreeFire InGame IdNumber" class="ingamenumber" name="ffid" required>
-            <button type="submit" class="ffvalue" id="ffvalue" >Submit</button>
+            <input type="text" placeholder=" FreeFire InGame  IdNumber" class="ingamenumber" name="ffid" required>
+            <button type="submit" class="ffvalue" id="ffvalue" > Submit</button>
             </form>
         </div>
         <button class="pubgbtn" id="pubgbtn">PUBG</button>
@@ -104,6 +104,15 @@
                 pubgbtn.style.backgroundColor = "white";
                 pubgbtn.style.color = "black";
             }
+            ffsubmitbtn.onclick = () => {
+                ffsubmitbtn.style.visibility = "hidden"
+            }
+        </script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script>
+            {% for message in messages %}
+                swal('{{ message }}')
+            {%endfor%}
         </script>
 
 {%include "footer.html"%}

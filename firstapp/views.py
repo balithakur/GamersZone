@@ -36,7 +36,7 @@ def payment(request):
         }
         param_dict['CHECKSUMHASH'] = Checksum.generate_checksum(param_dict, MERCHANT_KEY, )
         return render(request, 'paytm.html', {'param_dict': param_dict})
-    return render(request, 'payment.html')
+    return render(request, 'payment.html', )
 
 
 @csrf_exempt
@@ -87,10 +87,10 @@ def signup(request):
         #    pass 
         
         userlogin=User.objects.all()
-        for indata in userlogin:
+        for userdata in userlogin:
             pass
             #print("yes")
-        if indata.email == mail : 
+        if userdata.email == mail : 
             messages.error(request, 'mail already exists')
         else:
             if pass1 != pass5 : 
@@ -123,9 +123,9 @@ def tournament(request):
         ff={
             'freefire':freefire
         }
-        for fff in freefire:
-            print(fff.ffid)
-            if fff.ffid is not None:
+        for ff in freefire:
+            print(ff.ffid)
+            if ff.ffid is not None:
                 return HttpResponseRedirect('payment')
         else:
             return HttpResponseRedirect('profile')
@@ -160,34 +160,43 @@ def loginn(request):
     return render(request, 'login.html')
 
 def profile(request):
-    freefire=freefiredata.objects.all()
+
+      #real code  
+    freefireuserdata=freefiredata.objects.all()
+    userlogin=User.objects.all()
     ffdata={
-        'freefire':freefire
+        'freefiredata':freefireuserdata,
+        'userlogin':userlogin
     }
     if request.method =="POST":
         logout(request)
-        messages.success(request,"your account sucessfully logout")
-        return HttpResponseRedirect('login')
+        return HttpResponseRedirect('home')
     return render(request, 'profile.html',ffdata)
 
 
 def ffdata(request):
     if request.method =="POST":
-        ffnamee=request.POST["fname"]
+        fname=request.POST["fname"]
         ffid=request.POST["ffid"]
         if request.user.is_authenticated:
-            print(request.user.username)
-            if request.user.username == ffnamee:
-                print(ffnamee)
-                fdata=freefiredata(ffname=ffnamee, ffid=ffid)
-                fdata.save()
-            else:
-                return HttpResponse("chl n")
+           # print(request.user.username)
+           pass
     freefire=freefiredata.objects.all()
-    ff={
+    ffuserdata={
         'freefire':freefire
     }
-    return render(request, 'profile.html',ff)
+    for abc in freefire:
+        pass
+    if abc.ffname == fname:
+        messages.error(request, "This user data already registerd with us")
+    else:
+        if request.user.username == fname :
+            fdata=freefiredata(ffname=fname, ffid=ffid)
+            fdata.save()
+        else: 
+            messages.error(request, "username doesnot match") 
+
+    return render(request, 'profile.html', ffuserdata)
 
 def pubgdata(request):
     if request.method =="POST":

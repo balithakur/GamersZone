@@ -1,6 +1,6 @@
 from django.contrib import admin
 #from firstapp.models import account
-from firstapp.models import solofftournament, freefiredata, pubggdata, coddata, duofftournament, squadfftournament
+from firstapp.models import solofftournament, freefiredata, pubggdata, coddata, duofftournament, squadfftournament, paymentdata
 
 
 # Register your models here.
@@ -28,3 +28,7 @@ class pubdata(admin.ModelAdmin):
 
 class coddata(admin.ModelAdmin):
     admin.site.register(coddata)
+
+class paymentdata(admin.ModelAdmin):
+    list_display = ('user','status','orderid','date')
+    admin.site.register(paymentdata)
