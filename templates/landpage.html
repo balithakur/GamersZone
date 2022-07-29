@@ -27,7 +27,15 @@
         <p>If you are not 18+ then please leave this website</p>
         <button class="exitbtn" id="exitbtn">Exit here</button>
     </div>
-    <script src= "{%static "firstpage.js" %}">
+    <script>
+        let homebtn = document.getElementById("homebtn")
+        let exitbtn = document.getElementById("exitbtn")
+        homebtn.onclick = () => {
+            location.href = "home"
+        }
+        exitbtn.onclick = () => {
+            location.href ="https://www.google.com/"
+        }
     </script>
 </body>
 </html>
