@@ -138,11 +138,11 @@
     box-shadow: 0 0 8px 0 red;
 }
 .logindiv h1 {
-    top: -18vh;
+    top: -140px;
     font-size: 40px;
 }
 .logindiv p {
-    top: -7vh;
+    top: -50px;
     font-size: 16px;
 }
 @media only screen and (min-width: 200px) and (max-width:500px) {
@@ -404,7 +404,7 @@
         font-family: karma;
     }
     .logindiv h1 {
-        top: -18vh;
+        top: -150px;
         left: 10vw;
         font-size: 37px;
     }
@@ -496,12 +496,12 @@
         border-radius: 20px;
     }
     .logindiv h1 {
-        top: -30vh;
+        top: -97px;
         left: 10vw;
         font-size: 32px;
     }
     .logindiv p {
-        top: -7vh;
+        top: -23px;
         left: 8vw;
         font-size: 13px;
     }
