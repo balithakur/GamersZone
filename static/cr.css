@@ -561,7 +561,7 @@
         border-radius: 20px;
     }
 }
-@media only screen and (min-width: 280px) and (max-width:420px) and (max-height:400px) {
+@media only screen and (min-width: 280px) and (max-width:400px) and (max-height:400px) {
     .logindiv {
         animation-name: firstanimation;
         animation-duration: 8s;
@@ -572,5 +572,68 @@
         top: 127vh;
         left: 0;
         border-radius: 20px;
+    }
+    .footer {
+        width: 100vw;
+        height: 42vh;
+        background-color: #979595;
+        position: absolute;
+        top: 245vh;
+    }
+}
+@media only screen and (min-width: 280px) and (max-width:400px) and (min-height:400px) and (max-height:500px) {
+    .logindiv {
+        animation-name: firstanimation;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        height: 60vh;
+        width: 100vw;
+        position: absolute;
+        top: 165vh;
+        left: 0;
+        border-radius: 20px;
+    }
+    .logindiv h1 {
+        top: -18vh;
+        font-size: 35px;
+    }
+    .logindiv p {
+        top: -7vh;
+        font-size: 15px;
+    }
+    .footer {
+        width: 100vw;
+        height: 42vh;
+        background-color: #979595;
+        position: absolute;
+        top: 285vh;
+    }
+}
+@media only screen and (min-width: 280px) and (max-width:400px) and (min-height:500px) and (max-height:600px) {
+    .logindiv {
+        animation-name: firstanimation;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        height: 60vh;
+        width: 100vw;
+        position: absolute;
+        top: 145vh;
+        left: 0;
+        border-radius: 20px;
+    }
+    .logindiv h1 {
+        top: -18vh;
+        font-size: 35px;
+    }
+    .logindiv p {
+        top: -7vh;
+        font-size: 15px;
+    }
+    .footer {
+        width: 100vw;
+        height: 42vh;
+        background-color: #979595;
+        position: absolute;
+        top: 245vh;
     }
 }
