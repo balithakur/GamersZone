@@ -170,7 +170,7 @@
         height: 60vh;
         width: 100vw;
         position: absolute;
-        top: 120vh;
+        top: 835px;
         left: 0;
         border-radius: 20px;
     }
@@ -316,7 +316,7 @@
         width: 400px;
         position: absolute;
         top: 107vh;
-        left: 23px;
+        left: 0px;
         border-radius: 20px;
     }
     .logindiv button {
@@ -484,7 +484,7 @@
         height: 60vh;
         width: 90vw;
         position: relative;
-        top: 35vh;
+        top: 500px;
         left: 2vw;
         border-radius: 20px;
     }
@@ -505,7 +505,7 @@
         height: 45vh;
         background-color: #979595;
         position: relative;
-        top: 150vh;
+        top: 1350px;
     }
 }
 @media only screen and (min-width: 1000px) and (max-width:2000px) {
@@ -543,7 +543,7 @@
         height: 60vh;
         width: 100vw;
         position: absolute;
-        top: 90vh;
+        top: 780px;
         left: 0;
         border-radius: 20px;
     }
