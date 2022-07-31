@@ -11,6 +11,7 @@ sitemaps = {
 }
 # end here
 
+
 urlpatterns = [
     path("", views.landingpage, name='landpage'),
     path("home", views.home, name='home'),
