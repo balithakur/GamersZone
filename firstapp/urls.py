@@ -2,6 +2,15 @@ from django.contrib import admin
 from django.urls import path
 from firstapp import views
 
+#for sitemap
+from django.contrib.sitemaps.views import sitemap
+from django.urls import path
+from firstapp.sitemap import StaticViewSitemap
+sitemaps = {
+    'static': StaticViewSitemap,
+}
+# end here
+
 urlpatterns = [
     path("", views.landingpage, name='landpage'),
     path("home", views.home, name='home'),
