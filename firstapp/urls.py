@@ -5,11 +5,14 @@ from firstapp import views
 #for sitemap
 from django.contrib.sitemaps.views import sitemap
 from django.urls import path
+
 from firstapp.sitemap import StaticViewSitemap
+from . import views
+
 sitemaps = {
     'static': StaticViewSitemap,
 }
-# end here
+#end
 
 
 urlpatterns = [
@@ -27,4 +30,7 @@ urlpatterns = [
     path("coddata", views.callofdutydata, name='coddata'),
     path("payment", views.payment, name='payment'),
     path("order", views.handlerequest, name='order'),
+    #sitemap path
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps},
+         name='django.contrib.sitemaps.views.sitemap')
 ]

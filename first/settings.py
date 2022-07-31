@@ -30,6 +30,9 @@ ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
+# for stiemap added manually
+SITE_ID = 1
+
 INSTALLED_APPS = [
     'firstapp',
     'django.contrib.admin',
@@ -38,8 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # added for sitemap
     'django.contrib.sites',
-    'django.contrib.sitemaps',
+    'django.contrib.sitemaps'
 ]
 
 
