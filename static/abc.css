@@ -63,7 +63,6 @@
 .onclick {
     visibility: hidden;
     position: absolute;
-    top: -1vh;
     z-index: 1;
     width: 1vw;
 }
@@ -127,6 +126,7 @@
     height: 100vh;
     width: 1vw;
     background-color: white;
+    z-index: 1;
 }
 .onclick ul {
     list-style: none;
@@ -184,24 +184,24 @@
 
 @keyframes sidebaranimation{
     0%{
-        position: absolute;
+        position: fixed;
         left:100vw;
         width:0vw;
     }
     100%{
-        position: absolute;
+        position: fixed;
         left:0vw;
         width:100vw;
     }
 }
 @keyframes sidebar2animation{
     0%{
-        position: absolute;
+        position: fixed;
         left:0vw;
         width:100vw;
     }
     100%{
-        position: absolute;
+        position: fixed;
         left:100vw;
         width:0vw;
     }
