@@ -1,0 +1,208 @@
+@font-face {
+    font-family: karma;
+    src:url(" { %static 'Karma-Light.ttf'%}")
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-display: swap;
+}
+.navbar {
+    position: fixed;
+    z-index: 10;
+    height: 80px;
+    width: 100%;
+    background-color: #32c7ff;
+}
+.navbar h1 {
+    position: absolute;
+    left: 70px;
+    top: 20px;
+}
+.navbar ul {
+    list-style: none;
+}
+.navbar li {
+    position: relative;
+    left: 40%;
+    display: inline-block;
+    margin: 10px;
+    top: 19px;
+    text-decoration: none;
+}
+.navbar li button {
+    height: 30px;
+    width: 100px;
+    background-color: #32c7ff;
+    border: .1px solid blue;
+    border-radius: 5px;
+}
+.navbar li button:hover {
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    font-size: 13px;
+}
+.navbar li a {
+    color: #000;
+    font-family: Source Serif Pro;
+}
+.navbar li a:hover {
+    border: 2px solid #000;
+    border-radius: 100px;
+    background-color: #000;
+    color: #fff;
+}
+.threebars {
+    visibility: hidden;
+}
+.close {
+    visibility: hidden;
+}
+.onclick {
+    visibility: hidden;
+    position: absolute;
+    top: -1vh;
+    z-index: 1;
+    width: 1vw;
+}
+@media only screen and (min-width: 200px) and (max-width:500px) {
+    .navbar li a {
+        visibility: hidden;
+    }
+    .navbar h1 {
+        position: absolute;
+        left: 5vw;
+        top: 20px;
+        font-size: 25px;
+    }
+    .threebars {
+        visibility:visible;
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        top: 20px;
+        left: 85vw;
+    }
+    .close{
+        visibility:hidden;
+        height: 40px;
+        width: 44px;
+        position: absolute;
+        top: 20px;
+        left: 85vw;
+    }
+}
+@media only screen and (min-width: 500px) and (max-width:1000px) {
+    .navbar li a {
+        visibility: hidden;
+    }
+    .navbar h1 {
+        position: absolute;
+        left: 10vw;
+        top: 20px;
+        font-size: 32px;
+    }
+    .threebars{
+        visibility: visible;
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        top: 20px;
+        left: 90vw;
+    }
+    .close{
+        visibility: hidden;
+        height: 40px;
+        width: 44px;
+        position: absolute;
+        top: 20px;
+        left: 85vw;
+    }
+    
+}
+.onclick {
+    position: fixed;
+    height: 100vh;
+    width: 1vw;
+    background-color: white;
+}
+.onclick ul {
+    list-style: none;
+}
+.onclick li button {
+    height: 8vh;
+    width: 55vw;
+    background-color: white;
+    border-bottom: 0px solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 5px;
+    position: relative;
+    top: 15vh;
+    left: 38vw;
+    font-size: 28px;
+    /* box-shadow: 0 0 2px; */
+    font-weight: 600;
+    padding: 0px;
+    margin: 10px;
+    text-decoration: none;
+}
+.onclick li button:hover {
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    font-size: 13px;
+}
+.onclick img {
+    height: 42px;
+    width: 42px;
+    position: absolute;
+    top: 16vh;
+    left: 47vw;
+}
+@media only screen and (min-width: 500px) and (max-width:1000px) {
+    .onclick li button {
+        position: relative;
+        left: 44vw;
+        top: 15vh;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .onclick {
+        visibility: hidden;
+        width: 1vw;
+    }
+    .navbar img {
+        visibility: hidden;
+        width: 1px;
+    }
+}
+
+@keyframes sidebaranimation{
+    0%{
+        position: absolute;
+        left:100vw;
+        width:0vw;
+    }
+    100%{
+        position: absolute;
+        left:0vw;
+        width:100vw;
+    }
+}
+@keyframes sidebar2animation{
+    0%{
+        position: absolute;
+        left:0vw;
+        width:100vw;
+    }
+    100%{
+        position: absolute;
+        left:100vw;
+        width:0vw;
+    }
+}

@@ -5,7 +5,7 @@ from django.shortcuts import render
 from firstapp.models import freefiredata ,pubggdata ,coddata
 from  django.http import  HttpResponse ,HttpResponseRedirect
 from django.contrib.auth import authenticate , login , logout
-from firstapp.models import solofftournament, duofftournament, squadfftournament
+from firstapp.models import solofftournament, duofftournament, squadfftournament, paymentdata
 from firstapp.paytm import Checksum
 import random
 from django.views.decorators.csrf import csrf_exempt
@@ -85,7 +85,6 @@ def signup(request):
         #    messages.error(request, "mail already exist")
         #except Exception:
         #    pass 
-        
         userlogin=User.objects.all()
         for userdata in userlogin:
             pass
@@ -124,10 +123,22 @@ def tournament(request):
             'freefire':freefire
         }
         for ff in freefire:
+            pass
+        userlogin=User.objects.all()
+        for userdata in userlogin:
+            pass
+        #payment = paymentdata.objects.all()
+        #for paymentdataa in payment:
+        #    print(paymentdataa.user)
+        #    pass
+        #if userdata.username == paymentdataa.user:
+        #        messages.error(request, "You are already register this tournament")
+        #else:
+        if userdata.username == ff.ffid:
             print(ff.ffid)
-            if ff.ffid is not None:
-                return HttpResponseRedirect('payment')
+            return HttpResponseRedirect('payment')
         else:
+            messages.error(request, "First you need to register your ingame username with us")
             return HttpResponseRedirect('profile')
     return render(request, 'tournamentpage.html',solodata)
 

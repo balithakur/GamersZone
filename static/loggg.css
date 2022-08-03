@@ -73,6 +73,7 @@
      border-left: 0px solid black;
      border-right: 0px solid black;
      border-top: 0px solid black;
+     outline:none;
  }
  .password1{
      height: 30px;
@@ -87,6 +88,7 @@
      border-left: 0px solid black;
      border-right: 0px solid black;
      border-top: 0px solid black;
+     outline:none;
  }
  .logindiv a{
      position:absolute;
@@ -201,6 +203,7 @@
          border-left: 0px solid black;
          border-right: 0px solid black;
          border-top: 0px solid black;
+         outline:none;
      }
      .password1{
          height: 30px;
@@ -215,6 +218,7 @@
          border-left: 0px solid black;
          border-right: 0px solid black;
          border-top: 0px solid black;
+         outline:none;
      }
      .logindiv button{
          height: 40px;
@@ -300,6 +304,7 @@
          border-left: 0px solid black;
          border-right: 0px solid black;
          border-top: 0px solid black;
+         outline:none;
      }
      .password1{
          height: 30px;
@@ -314,6 +319,7 @@
          border-left: 0px solid black;
          border-right: 0px solid black;
          border-top: 0px solid black;
+         outline:none;
      }
      .logindiv button{
          height: 40px;
@@ -329,7 +335,7 @@
  }
  @media only screen and ( min-width:1000px ){
      .login img{
-         height:100vh;
+         height:122vh;
          width:59vw;
          border-radius: 10px;
      }
@@ -362,6 +368,7 @@
          border-left: 0px solid black;
          border-right: 0px solid black;
          border-top: 0px solid black;
+         outline:none;
      }
      .password1 {
          height: 30px;
@@ -376,6 +383,7 @@
          border-left: 0px solid black;
          border-right: 0px solid black;
          border-top: 0px solid black;
+         outline:none;
      }
      .logindiv {
          animation-name: firstanimation;
@@ -468,6 +476,7 @@
          border-left: 0px solid black;
          border-right: 0px solid black;
          border-top: 0px solid black;
+         outline:none;
      }
      .password1 {
          height: 30px;
@@ -482,6 +491,7 @@
          border-left: 0px solid black;
          border-right: 0px solid black;
          border-top: 0px solid black;
+         outline:none;
      }
  }
  @media only screen and (min-width:600px ) and (max-height:400px){
@@ -545,6 +555,7 @@
          border-left: 0px solid black;
          border-right: 0px solid black;
          border-top: 0px solid black;
+         outline:none;
      }
      .password1 {
          height: 30px;
@@ -559,6 +570,7 @@
          border-left: 0px solid black;
          border-right: 0px solid black;
          border-top: 0px solid black;
+         outline:none;
      }
 }
 @media only screen and (min-width:200px) and (max-width:1000px) {

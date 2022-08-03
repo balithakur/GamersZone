@@ -10,10 +10,11 @@
     <meta name = "author" content = "Bali Thakur">
     <meta name="google-site-verification" content="s8O8o8omvcWNSK0KRmY6rDrZx-xpdbl-1XHsso8C45c" />
     <title>Best ESports and Tournament Website | GamersZone</title>
-     <style>
+    <link rel="stylesheet" href='{% static 'abc.css'%}'>
+    <!--<style>
         @font-face{font-family:karma;src:url("{%static 'Karma-Light.ttf'%}")}*{margin:0;padding:0;font-display:swap;}.navbar{position:fixed;z-index:10;height:80px;width:100%;background-color:#32c7ff}.navbar h1{position:absolute;left:70px;top:20px}.navbar li{position:relative;left:40%;display:inline-block;margin:10px;top:19px}.navbar li button{height:30px;width:100px;background-color:#32c7ff;border:.1px solid blue;border-radius:5px}.navbar li button:hover{border:2px solid #000;border-radius:5px;background-color:#000;color:#fff;font-size:13px}.navbar li a{text-decoration:none;color:#000;font-family:Source Serif Pro}.navbar li a:hover{border:2px solid #000;border-radius:100px;background-color:#000;color:#fff}.navbar img{visibility:hidden}.onclick{visibility:hidden;position:absolute;top:-1vh;z-index:1;width:1vw}@media only screen and (min-width:200px) and (max-width:500px){.navbar li a{visibility:hidden}.navbar h1{position:absolute;left:5vw;top:20px;font-size:25px}.navbar img{visibility:visible;height:32px;width:32px;position:absolute;top:20px;left:85vw}}@media only screen and (min-width:500px) and (max-width:1000px){.navbar li a{visibility:hidden}
 .navbar h1{position:absolute;left:10vw;top:20px;font-size:32px}.navbar img{visibility:visible;height:32px;width:32px;position:absolute;top:20px;left:90vw}}.onclick{height:75vh;width:1vw;background-color:#32c7ff}.onclick li button{height:30px;width:100px;background-color:#32c7ff;border:.1px solid blue;border-radius:5px;position:relative;left:34vw;top:15vh;margin:13px}.onclick li button:hover{border:2px solid #000;border-radius:5px;background-color:#000;color:#fff;font-size:13px}.onclick video{height:42px;width:42px;position:absolute;top:5vh;left:47vw}@media only screen and (min-width:500px) and (max-width:1000px){.onclick li button{position:relative;left:44vw;top:15vh}}@media only screen and (min-width:1000px){.onclick{visibility:hidden;width:1vw}.navbar img{visibility:hidden;width:1px}}
-     </style>
+     </style>-->
 </head> 
 <body>
     <div class="navbar" id="navbar">
@@ -39,6 +40,7 @@
 
     </nav>
     <img src="{%static "three bars.svg" %}" alt="bars" class="threebars" id="image">
+    <img src="{%static "black-x-png-27.png" %}" alt="closepic" class="close" id="close">
     </div>
     <div class="onclick" id="onclick">
         <nav>
@@ -60,25 +62,34 @@
         </ul>
         {%endif%}
         </nav>
-        <video src="{%static "x2.mp4" %}" alt="close" id="gif" muted loop autoplay></video>
     </div>
     <script>
         let a=document.getElementById("onclick");
         let b=document.getElementById("image");
         let c=document.getElementById("navbar");
-        let d=document.getElementById("gif");
+        let d=document.getElementById("close");
 
         b.onclick= () =>{
             a.style.visibility="visible";
+            d.style.visibility="visible";
             b.style.visibility="hidden";
-            c.style.visibility="hidden";
-            a.style.position="fixed";
+            c.style.visibility="visible";
             a.style.width="100vw"
+            a.style.position = "fixed"
+            a.style.left = "0vw"
+            a.style.animationName = "sidebaranimation"
+            a.style.animationDuration = "2s"
         }
         d.onclick = () => {
-            a.style.visibility="hidden";
-            c.style.visibility="visible";
             b.style.visibility="visible";
+            a.style.visibility="visible";
+            c.style.visibility="visible";
+            a.style.position = "fixed"
+            a.style.width = "0vw"
+            a.style.left = "100vw"
+            d.style.visibility = "hidden"
+            a.style.animationName = "sidebar2animation"
+            a.style.animationDuration = "2s"
         }
         
     </script>

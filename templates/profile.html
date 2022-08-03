@@ -1,6 +1,6 @@
 {%include "header.html"%}
 {%load static%}
-<link rel="stylesheet" href="{%static "usprofile.css" %}">
+<link rel="stylesheet" href="{%static "useprofile.css" %}">
     <div class="profile">
         {%if request.user.is_authenticated%}
         <h1>UserName</h1>
@@ -103,9 +103,6 @@
                 ffbtn.style.color = "black";
                 pubgbtn.style.backgroundColor = "white";
                 pubgbtn.style.color = "black";
-            }
-            ffsubmitbtn.onclick = () => {
-                ffsubmitbtn.style.visibility = "hidden"
             }
         </script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
