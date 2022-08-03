@@ -1,0 +1,96 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+.herosection{
+    height:60vh;
+    width:100vw;
+    position: absolute;
+    top:20vh;
+}
+.herosection h1{
+    font-size: 3.5vw;
+    font-family: karma;
+    position: absolute;
+    left:40.5vw;
+}
+.a{
+    position: absolute;
+    left:10vw;
+    top:15vh;
+    font-family: karma;
+    font-size: 1.9vw;
+}
+.b{
+    position: absolute;
+    left:10vw;
+    top:25vh;
+    font-family: karma;
+    font-size: 1.9vw;
+}
+.herosection button{
+    height: 8vh;
+    width:12vw;
+    position: absolute;
+    left:46vw;
+    top:40vh;
+    font-size: 1.2vw;
+    background-color:#32C7FF;
+    border-radius: 10px;
+    border:1px solid black;
+    box-shadow: 0 0 8px 0;
+}
+.herosection button:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 8px 0;
+}
+@media only screen and (min-width:200px) and (max-width:500px){
+    *{
+        margin:0px;
+        padding: 0px;
+    }
+    .herosection{
+        height:60vh;
+        width:100vw;
+        position: absolute;
+        top:20vh;
+    }
+    .herosection h1{
+        font-size: 25px;
+        font-family: karma;
+        position: absolute;
+        left: 21.5vw;
+    }
+    .a{
+        position: absolute;
+        left: 10vw;
+        top: 15vh;
+        font-family: karma;
+        font-size: 19px;
+    }
+    .b{
+        position: absolute;
+    left: 10vw;
+    top: 25vh;
+    font-family: karma;
+    font-size: 19px;
+    }
+    .herosection button{
+        height: 53px;
+        width: 140px;
+        position: absolute;
+        left: 28vw;
+        top: 45vh;
+        font-size: 15px;
+        background-color: #32C7FF;
+        border-radius: 10px;
+        border: 1px solid black;
+        box-shadow: 0 0 8px 0;
+    }
+    .herosection button:hover{
+        background-color: black;
+        color: white;
+        box-shadow: 0 0 8px 0;
+    }
+}

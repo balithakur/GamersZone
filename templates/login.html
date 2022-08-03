@@ -22,3 +22,8 @@
     </div>
     </form>
 {%include 'footer.html'%}
+<script>
+    {% for message in messages %}
+        swal('{{ message }}')
+    {%endfor%}
+</script>

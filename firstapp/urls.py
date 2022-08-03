@@ -30,6 +30,7 @@ urlpatterns = [
     path("coddata", views.callofdutydata, name='coddata'),
     path("payment", views.payment, name='payment'),
     path("order", views.handlerequest, name='order'),
+    path("roomid", views.roomid, name='roomid'),
     #sitemap path
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps},
          name='django.contrib.sitemaps.views.sitemap')

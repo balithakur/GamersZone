@@ -1,3 +1,4 @@
+{%include "header.html"%}
 <!DOCTYPE html>
 {%load static%}
 <html lang="en">
@@ -6,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{%static "payment.css" %}">
+    <link rel="stylesheet" href="{%static "paymenttt.css" %}">
 </head>
 <body>
     <div class="herosection">
@@ -19,11 +20,6 @@
             {%csrf_token%}
             <button id="submit" style="visibility:visible" > Join Tournament</button>
         </form> 
-    </div>
-    <div class="jointournament">
-        <button>Joined Player</button>
-        <button >Result</button>
-        <p>{{response}} mil gya</p>
     </div>
 </body>
 </html>

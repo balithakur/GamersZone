@@ -20,7 +20,7 @@ def landingpage(request):
     return render(request, 'landpage.html')
 
 
-def payment(request):
+def payment(request): 
     if request.method=="POST":
         param_dict = {
 
@@ -36,7 +36,7 @@ def payment(request):
         }
         param_dict['CHECKSUMHASH'] = Checksum.generate_checksum(param_dict, MERCHANT_KEY, )
         return render(request, 'paytm.html', {'param_dict': param_dict})
-    return render(request, 'payment.html', )
+    return render(request, 'payment.html')
 
 
 @csrf_exempt
@@ -53,7 +53,7 @@ def handlerequest(request):
     if verify:
         if response_dict['RESPCODE'] == '01':
           #  return HttpResponseRedirect('order')
-            print('order successful')
+            return HttpResponseRedirect('roomid')
         else:
             print('order was not successful because' + response_dict['RESPMSG'])
     return render(request, 'order.html', {'response': response_dict})
@@ -159,7 +159,7 @@ def loginn(request):
             print("yess") 
             return HttpResponseRedirect('profile')
         else:
-            print("shii se likh n")
+            messages.error(request, "Email id and Password do not match.Please try again")
                 #createuseraccount=authenticate(mail = logindata.mail, password = logindata.pass5)
                 #if createuseraccount is not None:
                 #accountt=authenticate(mail=logindata.mail, password=logindata.pass5)
@@ -248,3 +248,6 @@ def contact(request):
 #        return HttpResponseRedirect('contact')
 #    return render(request, 'logout.html')
         
+
+def roomid(request):
+    return render(request, 'roomid.html')
