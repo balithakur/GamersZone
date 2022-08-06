@@ -576,7 +576,7 @@
 @media only screen and (min-width:200px) and (max-width:1000px) {
 .footer{
     width: 100vw;
-    height: 50vh;
+    height: 350px;
     background-color: rgba(151, 149, 149, 1);
     position: absolute;
     top: 1490px;
@@ -600,10 +600,10 @@
         top: 290vh;
     }
 }
-@media only screen and (max-height:680px){
+@media only screen and (max-height:680px) and (max-width:380px){
     .footer{
         width: 100vw;
-        height: 90vh;
+        height: 300px;
         background-color: rgba(151, 149, 149, 1);
         position: absolute;
         top: 1230px;
