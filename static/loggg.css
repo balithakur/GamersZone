@@ -579,7 +579,7 @@
     height: 50vh;
     background-color: rgba(151, 149, 149, 1);
     position: absolute;
-    top: 185vh;
+    top: 1490px;
     }
 }
 @media only screen and (min-width:1000px) and (max-width:2000px) {
@@ -600,3 +600,13 @@
         top: 290vh;
     }
 }
+@media only screen and (max-height:680px){
+    .footer{
+        width: 100vw;
+        height: 90vh;
+        background-color: rgba(151, 149, 149, 1);
+        position: absolute;
+        top: 1230px;
+    }
+}
+
