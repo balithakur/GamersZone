@@ -578,9 +578,8 @@
     width: 100vw;
     height: 350px;
     background-color: rgba(151, 149, 149, 1);
-    position: fixed;
+    position: absolute;
     top: 1490px;
-    z-index:3454545455434;
     }
 }
 @media only screen and (min-width:1000px) and (max-width:2000px) {
