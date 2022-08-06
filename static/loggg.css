@@ -578,7 +578,7 @@
     width: 100vw;
     height: 350px;
     background-color: rgba(151, 149, 149, 1);
-    position: absolute;
+    position: fixed;
     top: 1490px;
     }
 }
