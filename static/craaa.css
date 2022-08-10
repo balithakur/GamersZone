@@ -261,7 +261,7 @@
     }
     .login h1 {
         position: absolute;
-        top: 20vh;
+        top: 10vh;
         font-size: 11vw;
     }
     .login p {
@@ -526,7 +526,16 @@
         min-height: 260px;
         background-color: #979595;
         position: relative;
-        top: 1300px;
+        top: 1200px;
+    }
+}
+@media only screen and (min-width: 359px) and (max-width:361px) {
+    .footer {
+        width: 100%;
+        min-height: 260px;
+        background-color: #979595;
+        position: relative;
+        top: 1020px;
     }
 }
 @media only screen and (min-width: 1000px) and (max-width:2000px) {
@@ -544,7 +553,7 @@
         height: 90vh;
         background-color: #979595;
         position: absolute;
-        top: 1000px;
+        top: 1300px;
     }
 }
 @media only screen and (min-width: 390px) and (max-width:421px) and (max-height:917px) {
@@ -555,7 +564,7 @@
         height: 60vh;
         width: 100vw;
         position: absolute;
-        top: 680px;
+        top: 730px;
         left: 0;
         border-radius: 20px;
     }
@@ -568,7 +577,7 @@
         height: 60vh;
         width: 100vw;
         position: absolute;
-        top: 565px;
+        top: 725px;
         left: 0;
         border-radius: 20px;
     }
