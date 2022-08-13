@@ -125,9 +125,6 @@ def tournament(request):
         }
         for ff in freefire:
             pass
-        userlogin=User.objects.all()
-        for userdata in userlogin:
-            pass
         #payment = paymentdata.objects.all()
         #for paymentdataa in payment:
         #    print(paymentdataa.user)
@@ -135,8 +132,8 @@ def tournament(request):
         #if userdata.username == paymentdataa.user:
         #        messages.error(request, "You are already register this tournament")
         #else:
-        if userdata.username == ff.ffname:
-            print(ff.ffid)
+        if request.user.username == ff.ffname:
+            print(ff.ffname)
             return HttpResponseRedirect('payment')
         else:
             messages.error(request, "First you need to register your ingame username with us")
