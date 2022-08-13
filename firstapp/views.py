@@ -135,7 +135,7 @@ def tournament(request):
         #if userdata.username == paymentdataa.user:
         #        messages.error(request, "You are already register this tournament")
         #else:
-        if userdata.username == ff.ffid:
+        if userdata.username == ff.ffname:
             print(ff.ffid)
             return HttpResponseRedirect('payment')
         else:
