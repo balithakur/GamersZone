@@ -17,7 +17,7 @@ MERCHANT_ID='aRRQGx94100136444263'
 
 # Create your views here.
 def landingpage(request):
-    return render(request, 'landpage.html')
+    return render(request, 'index.html')
 
 
 def payment(request): 
