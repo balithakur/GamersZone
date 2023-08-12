@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "keywords" content = "Tournament website,esports website,freefire tournament website,pubg tournament website,cod tournament website,best esports website,freefire esport website,pubg esport website,cod esport website,Call of Duty esport website">
+    <meta name = "description" content = "This is a best tournament or esports website. In that website we oraganises free tournamnet on sunday and give prizes.In that website you can play play tournament or esport in FREEFIRE , PUBG , COD game.">
+    <meta name = "author" content = "Bali Thakur">
+    <meta name="google-site-verification" content="s8O8o8omvcWNSK0KRmY6rDrZx-xpdbl-1XHsso8C45c" />
+    <title>Best ESports and Tournament Website | GamersZone</title>
+    <!--<link rel="stylesheet" href='{% static 'firstpage.css'%}'>-->
+    <style>
+        @font-face{font-family:karma;src:url("{%static 'Karma-Light.ttf'%}")}*{margin:0;padding:0;background-color:#1a1a1a;font-display:swap}.herosection{width:100vw;height:50vh;position:absolute;top:10vh;display:inline-block}.herosection h1{font-family:karma;font-size:52px;text-align:center;justify-content:center;color:#fff;margin:50px;font-weight:700}.herosection p{font-weight:100;font-family:karma;font-size:22px;text-align:center;justify-content:center;color:#fff}.herosection button{position:absolute;top:45vh;left:46vw;height:7vh;width:10vw;border:1px solid #fff;font-weight:400;font-family:karma;font-size:22px;justify-content:center;color:#000;background-color:#fff;border-radius:5px;box-shadow:0 0 8px 0 #fff}.herosection button:hover{font-size:23px}.exit{width:100vw;height:30vh;position:absolute;top:68vh;display:inline-block}.exit p{font-weight:100;font-family:karma;font-size:22px;text-align:center;justify-content:center;color:#fff;margin:20px}.exit button{position:absolute;top:15vh;left:46vw;height:7vh;width:10vw;border:1px solid #fff;font-weight:400;font-family:karma;font-size:22px;justify-content:center;color:#000;background-color:#fff;border-radius:5px;box-shadow:0 0 8px 0 #fff}
+.exit button:hover{font-size:23px}@media only screen and (min-width:200px) and (max-width:500px){.herosection{width:90vw;height:50vh;position:absolute;left:5vw}.herosection h1{font-size:10vw}.herosection p{font-size:17px}.herosection button{position:absolute;top:35vh;left:35vw;height:4vh;width:22vw;font-size:16px}.herosection button:hover{font-size:17px}.exit{width:90vw;height:30vh;position:absolute;top:65vh;left:5vw}.exit p{font-size:17px}.exit button{position:absolute;top:13vh;left:35vw;height:4vh;width:22vw;font-size:16px}.exit button:hover{font-size:17px}}@media only screen and (max-width:376px) and (max-height:741px){.herosection{width:90vw;height:50vh;position:absolute;left:5vw}.herosection button{position:absolute;top:45vh;left:33vw;height:4vh;width:25vw;font-size:16px}.exit{width:90vw}.exit button{position:absolute;top:15vh}}@media only screen and (min-width:500px) and (max-width:1000px){.herosection{width:90vw;height:50vh;position:absolute;left:5vw}.herosection h1{font-size:8vw}
+.herosection p{font-size:21px}.herosection button{position:absolute;top:35vh;left:36vw;height:5vh;width:19.5vw;font-size:21px}.herosection button:hover{font-size:22px}.exit{width:90vw;height:30vh;position:absolute;top:65vh;left:5vw}.exit p{font-size:21px}.exit button{position:absolute;top:13vh;left:37vw;height:5vh;width:18vw;font-size:21px}.exit button:hover{font-size:22px}}@media only screen and (max-width:700px) and (max-height:310px){.herosection{width:90vw;height:50vh;position:absolute;left:5vw}.herosection h1{font-size:8vw}.herosection p{font-size:16px}.herosection button{position:absolute;top:90vh;left:36vw;height:10vh;width:19.5vw;font-size:21px}.herosection button:hover{font-size:22px}.exit{width:90vw;height:60vh;position:absolute;top:125vh;left:5vw}.exit p{font-size:16px}.exit button{position:absolute;top:30vh;left:37vw;height:10vh;width:18vw;font-size:21px}.exit button:hover{font-size:22px}}
+    </style>
+</head>
+<body>
+    <div class="herosection">
+        <h1>GamersZone</h1>
+        <p>Gamerszone is a 18+ Tournament/Esports website where you can play tournament and earn money.<br>By entering and using this website you agree to the <u>Terms of Use</u> and <u>Privacy Policy.</u></p>
+        <button class="homebtn" id= "homebtn">I'm over 18</button>
+    </div>
+    <div class="exit">
+        <p>If you are not 18+ then please leave this website</p>
+        <button class="exitbtn" id="exitbtn">Exit here</button>
+    </div>
+    <script>
+        let homebtn = document.getElementById("homebtn")
+        let exitbtn = document.getElementById("exitbtn")
+        homebtn.onclick = () => {
+            location.href = "home"
+        }
+        exitbtn.onclick = () => {
+            location.href ="https://www.google.com/"
+        }
+    </script>
+</body>
+</html>

@@ -17,7 +17,7 @@ MERCHANT_ID='aRRQGx94100136444263'
 
 # Create your views here.
 def landingpage(request):
-    return render(request, 'index.html')
+    return render(request, 'indexx.html')
 
 
 def payment(request): 
@@ -62,7 +62,7 @@ def handlerequest(request):
 
 def home(request):
     #return HttpResponse("this is homepage")
-    return render(request, 'home.html')
+    return render(request, 'index.html')
 def signup(request):
     #return HttpResponse("this is homepage")
     if request.method=="POST":
