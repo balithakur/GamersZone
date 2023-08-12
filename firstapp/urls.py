@@ -16,7 +16,7 @@ sitemaps = {
 
 
 urlpatterns = [
-    path("", views.landingpage, name='landpage'),
+    path("", views.landingpage, name='index'),
     path("home", views.home, name='home'),
     path("createaccount", views.signup, name='signup'),
     path("thankyoupage", views.thank, name='thankyou'),
