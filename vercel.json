@@ -21,7 +21,7 @@
   },
   {
   "src": "/(.*)",
-  "dest": "devntechno/wsgi.py"
+  "dest": "first/wsgi.py"
   }
   ]
   }
